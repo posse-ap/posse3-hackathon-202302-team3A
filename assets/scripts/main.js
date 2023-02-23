@@ -1,3 +1,29 @@
+
+// ここから颯人
+$(function () {
+    $('.side_nav').hide();
+
+    $(window).scroll(function () { 
+        if ($(this).scrollTop()> 700) {
+            $('.side_nav').fadeIn();
+        }else{
+            $('.side_nav').fadeOut();
+        }
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+//ここからいつき
 let slideIndex = 0;
 showSlides();
 
