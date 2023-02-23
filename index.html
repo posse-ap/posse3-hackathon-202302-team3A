@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>POSSE掲示板</title>
   <link rel="stylesheet" href="./assets/styles/reset.css">
-  <link rel="stylesheet" href="./assets/styles/style.css">
+  <link rel="stylesheet" href="./assets/styles/koyo.css">
   <script src="./assets/scripts/main.js" defer></script>
 </head>
 
@@ -18,7 +18,7 @@
   <main>
 
 <!-- ここからいっちゃん -->
-<section>
+<!-- <section>
   <div class="hero_container">
     <img class="hero_images" src="/assets/images/hero-1.jpg">
     <img class="hero_images" src="/assets/images/hero-2.jpg">
@@ -28,25 +28,26 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <!--- ここからこうよう --->
+<!-- モーダル部分 -->
 
     <section class="modal_container">
-      <div class="status_box">
+      <div class="status_box modal_box">
         <div class="status_message_box">
+          <div class="modal_prof_picture">
+            <img class="modal_prof_picture_image" src="./assets/images/koyo.jpg" alt="仮です。profの画像">
+          </div>
           <div class="status_message_image">
             <p class="status_message_text">
               仮のテキストです
             </p>
           </div>
         </div>
-        <div class="modal_prof_picture">
-          <img src="./assets/images/koyo.jpg" alt="仮です。profの画像">
-        </div>
       </div>
 
-      <div class="modal_prof_box">
+      <div class="modal_prof_box modal_box">
         <div>名前</div>
         <div>POSSE③</div>
         <div>慶應義塾大学</div>
@@ -62,20 +63,16 @@
         </ul>
       </div>
 
-      <div class="sns_box">
+      <div class="sns_box modal_box">
         <div class="sns_icon">
-          <i class="sns_icon_image">
-            <img src="./assets/images/Instagram_logo.webp" alt="インスタのロゴ">
-          </i>
+            <img class="sns_icon_image" src="./assets/images/Instagram_logo.webp" alt="インスタのロゴ">
         </div>
         <div class="sns_icon">
-          <i class="sns_icon_image">
-            <img src="./assets/images/line_logo.png" alt="Lineのロゴ">
-          </i>
+            <img class="sns_icon_image" src="./assets/images/line_logo.png" alt="Lineのロゴ">
         </div>
       </div>
 
-      <div class="interview_box">
+      <div class="interview_box modal_box">
         <p>仮のインタビューです</p>
       </div>
     </section>
