@@ -1,3 +1,4 @@
+// ここから颯人
 let slideIndex = 0;
 showSlides();
 

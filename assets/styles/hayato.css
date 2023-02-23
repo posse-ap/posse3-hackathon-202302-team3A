@@ -1,0 +1,8 @@
+.side_nav {
+    background-color: #ff838b;
+    width: 170px;
+    height: 590px;
+    text-align: center;
+    display: fixed;
+    position: sticky;
+    } 
