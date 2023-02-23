@@ -1,0 +1,10 @@
+.side_nav {
+    background-color: #ff838b;
+    width: 170px;
+    /* 高さは再度調整すべき */
+    height: 710px;
+    text-align: center;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    } 

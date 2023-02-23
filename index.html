@@ -7,11 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>POSSE掲示板</title>
   <link rel="stylesheet" href="./assets/styles/reset.css">
+
   <link rel="stylesheet" href="./assets/styles/itsuki.css">
   <link rel="stylesheet" href="./assets/styles/hayato.css">
   <link rel="stylesheet" href="./assets/styles/koyo.css">
   <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
   <script src="./assets/scripts/main.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 </head>
 
 <body>
@@ -19,6 +21,7 @@
     <div class="header_logo"><img src="/assets/images/logo.svg"></div>
   </header>
   <main>
+
 <!-- ここからいっちゃん -->
 <section>
   <div class="hero_container">
@@ -43,14 +46,18 @@
 </section>
 
 <!--- ここからこうよう --->
+
     <section class="modal_container">
       <div class="status_box">
         <div class="status_message_box">
           <div class="status_message_image">
             <p class="status_message_text">
-
+              仮のテキストです
             </p>
           </div>
+        </div>
+        <div class="modal_prof_picture">
+          <img src="./assets/images/koyo.jpg" alt="仮です。profの画像">
         </div>
       </div>
 
@@ -58,16 +65,36 @@
         <div>名前</div>
         <div>POSSE③</div>
         <div>慶應義塾大学</div>
-        <div class="sns_box">
-          <div class="sns_icon">
-            <i class="sns_icon_image"></i>
-          </div>
-          <div class="sns_icon">
-            <i class="sns_icon_image"></i>
-          </div>
+        <ul>趣味
+          <li>サッカー</li>
+          <li>テニス</li>
+          <li>バスケ</li>
+        </ul>
+        <ul>最近ハマっていること
+          <li>サッカー観戦</li>
+          <li>テニス観戦</li>
+          <li>バスケ観戦</li>
+        </ul>
+      </div>
+
+      <div class="sns_box">
+        <div class="sns_icon">
+          <i class="sns_icon_image">
+            <img src="./assets/images/Instagram_logo.webp" alt="インスタのロゴ">
+          </i>
+        </div>
+        <div class="sns_icon">
+          <i class="sns_icon_image">
+            <img src="./assets/images/line_logo.png" alt="Lineのロゴ">
+          </i>
         </div>
       </div>
+
+      <div class="interview_box">
+        <p>仮のインタビューです</p>
+      </div>
     </section>
+
     
 
 <!-- ここから颯人 -->
@@ -76,14 +103,21 @@
 <section class="side_nav">
   <div class="side_nav_group_box">
     <h2>所属グループ</h2>
+    <ul class="side_nav_group__list">
+      <li>list1</li>
+      <li>list2</li>
+    </ul>
   </div>
   <div class="calendar"></div>
+
 </section>
+
 
   </main>
   <footer>
 
   </footer>
+  <script src="./assets/scripts/main.js"></script>
 </body>
 
 </html>
