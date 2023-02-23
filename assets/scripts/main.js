@@ -1,3 +1,4 @@
+
 // ここから颯人
 $(function () {
     $('.side_nav').hide();
@@ -22,6 +23,7 @@ $(function () {
 
 
 
+//ここからいつき
 let slideIndex = 0;
 showSlides();
 
