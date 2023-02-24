@@ -23,18 +23,15 @@
 /* サイドバー */
 .side_nav {
     background: #EFF2F5;
-    width: 170px;
+    width: 340px;
     /* 高さは再度調整すべき */
-    height: 710px;
+    height: 100vh;
     text-align: center;
     position: fixed;
     left: 0px;
     top: 0px;
     } 
 
-.side_nav h2{
-
-}
 
 
 

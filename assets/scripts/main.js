@@ -26,6 +26,20 @@ $(function () {
 
 //ここからいつき
 
+
+// モーダルアニメーション
+const modal = document.getElementById("modal");
+
+let opacity = 0;
+const animation = setInterval(() => {
+  if (opacity >= 1) {
+    clearInterval(animation);
+  }
+  modal.style.opacity = opacity;
+  opacity += 0.01;
+}, 22);
+
+
 // ヒーロー画像スライド
 
 let slideIndex = 0;
@@ -160,7 +174,7 @@ cancelButton.addEventListener("click", cancelSearch);
 // }, false);
 
 // モーダルを取得する
-var modal = document.getElementById("modal");
+
 
 
 var span = document.getElementsByClassName("close")[0];
@@ -182,6 +196,13 @@ window.onclick = function(event) {
   }
 }
 
+
+// リロード時にページ最上部に移動
+// window.onload = function() {
+//   setTimeout(function() {
+//     scrollTo(0,0);
+//   }, 0);
+// }
 // ここからこうよう
 const profile = [
   {
