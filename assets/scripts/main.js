@@ -16,6 +16,7 @@
 // }
 // });
 
+
 // $(window).resize(function () {
 //   const width = $(window).width();
 //   console.log(width);
@@ -26,6 +27,7 @@
 //     if(sideNav.classList.contains('active'))
 //     sideNav.classList.remove('active');
 //   }
+
   
 //   // $(function () {
 //     $('.side_nav').hide();
@@ -40,7 +42,6 @@
 //   // });
 
 // });
-
 
 
 
@@ -365,7 +366,9 @@ statusBox.innerHTML +=
 
       `<div class="sns_box modal_box">`+
         `<div class="sns_icon">`+
-            `<img class="sns_icon_image" src="./assets/images/Instagram_logo.webp" alt="インスタのロゴ">`+
+        `<a href = "https://www.instagram.com/t.itsuki0724/">`+
+        `<img class="sns_icon_image" src="./assets/images/Instagram_logo.webp" alt="インスタのロゴ">`+
+        `</a>`+
         `</div>`+
         `<div class="sns_icon">`+
         `<a href = "`+profile[i].line+`">`+   
@@ -444,7 +447,9 @@ const randomProfPickUp = (index) =>  {
 
       `<div class="sns_box modal_box">`+
         `<div class="sns_icon">`+
-            `<img class="sns_icon_image" src="./assets/images/Instagram_logo.webp" alt="インスタのロゴ">`+
+        `<a href = "https://www.instagram.com/t.itsuki0724/">`+    
+        `<img class="sns_icon_image" src="./assets/images/Instagram_logo.webp" alt="インスタのロゴ">`+
+        `</a>`+
         `</div>`+
         `<div class="sns_icon">`+
         `<a href = "`+profile[index].line+`">`+   
