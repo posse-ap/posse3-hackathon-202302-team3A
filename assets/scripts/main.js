@@ -285,3 +285,84 @@ statusBox.innerHTML +=
     `</section>` 
   
   }
+
+
+
+
+
+
+
+
+
+
+
+// モダールランダムプロフィール
+// shuffle関数の定義
+
+// const  shuffle = array => {
+//   for (let i = array.length; i >= 0; i--) {
+//     const randomIndex = Math.floor(Math.random() *(i+1));
+//     [array[i], array[randomIndex],array[i]]; 
+//   }
+//   return array
+// }
+// const profArray = shuffle(profile)
+
+const randomIndex = Math.floor(Math.random() *(profile.length));
+console.log(profile[randomIndex].name);
+
+const randomBox = document.getElementById(`modal_random_box`);
+
+const randomProfPickUp = (index) =>  { 
+  randomBox.innerHTML +=
+`<section class="modal_container">`+
+      `<div class="status_box modal_box">`+
+        `<div class="status_message_box">`+
+          `<div class="modal_prof_picture">`+
+            `<img class="modal_prof_picture_image" src="./assets/images/profile_image/`+profile[index].image+`" alt="仮です。profの画像">`+
+          `</div>`+
+          `<div class="status_message_image">`+
+            `<p class="status_message_text">`+
+              `仮のテキストです`+
+            `</p>`+
+          `</div>`+
+        `</div>`+
+      `</div>`+
+
+      `<div class="modal_prof_box modal_box">`+
+        `<div>`+profile[index].name+`</div>`+
+        `<div>POSSE`+profile[index].POSSE+`</div>`+
+        `<div>`+profile[index].university+`</div>`+
+        `<div>`+profile[index].faculty+`</div>`+
+        `<ul id="modal_hobby">趣味`+  //for文書けたら嬉しい
+          `<li>`+profile[index].hobby[0]+`</li>`+
+          `<li>`+profile[index].hobby[1]+`</li>`+
+          `<li>`+profile[index].hobby[2]+`</li>`+
+        `</ul>`+
+        `<ul>最近ハマっていること`+
+          `<li>`+profile[index].addict[0]+`</li>`+
+          `<li>`+profile[index].addict[1]+`</li>`+
+          `<li>`+profile[index].addict[2]+`</li>`+
+        `</ul>`+
+      `</div>`+
+
+      `<div class="sns_box modal_box">`+
+        `<div class="sns_icon">`+
+            `<img class="sns_icon_image" src="./assets/images/Instagram_logo.webp" alt="インスタのロゴ">`+
+        `</div>`+
+        `<div class="sns_icon">`+
+        `<a href = "`+profile[index].line+`">`+   
+        `<img class="sns_icon_image" src="./assets/images/line_logo.png" alt="Lineのロゴ">`+
+        `</a>`+
+        `</div>`+
+      `</div>`+
+
+      `<div class="interview_box modal_box">`+
+        `<p>仮のインタビューです</p>`+
+      `</div>`+
+    `</section>` 
+  
+
+  }
+
+  randomProfPickUp(randomIndex);
