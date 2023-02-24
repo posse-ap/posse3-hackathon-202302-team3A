@@ -19,9 +19,6 @@
 </head>
 
 <body>
-  <header>
-    <div class="header_logo"><img src="./assets/images/logo.svg"></div>
-  </header>
   <main>
     <div class="container">
 
@@ -37,9 +34,8 @@
 
 
 <!-- ここから颯人 -->
-<section class="">
+<section class="group_list_title">
   <h2>グループ一覧</h2>
-  <div class="serch_box"></div>
 </section>
 
 <!--- ここからこうよう --->
@@ -47,24 +43,22 @@
 <div class="group_wrapper" id="group_wrapper"></div>
 
 <!-- ここからサイドナビゲーション -->
+
 <section class="side_nav" id="side_nav">
-  <div class="side_nav_join_group_box">
-    <h2>所属グループ</h2>
-    <ul class="side_nav_group_list">
-      <li>list1</li>
-      <li>list2</li>
-    </ul>
+  <div class="search_2">
+    <div><input class="search_box_2" id="searchInput" type="text" placeholder="キーワードを入力して下さい"></div>
+    <button class="search_button_2" id="searchButton">検索</button>
+    <button class="cancel_button_2" id="cancelButton">キャンセル</button>
   </div>
   <div class="side_nav_group_box">
     <a href="./index.html">
-      <h2>メインページ</h2>
+      <h2 class="side_nav_group-1"><span>プロフィールページへ</span></h2>
     </a>
-    <a href="">
-      <h2>グループページ</h2>
+    <a href="./group.html">
+      <h2 class="side_nav_group-2"><span>グループページへ</span></h2>
     </a>
   </div>
-  <div class="calendar"></div>
-
+  <iframe class="event-barner" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FTokyo&title=%E3%83%AA%E3%82%A2%E3%82%A4%E3%83%99%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC&showTabs=0&showPrint=0&src=dHN1Y2hpeWEuaXRzdWtpMDcyNEBnbWFpbC5jb20&src=aTQ5dDBrN2U3dHZrYTlhNXNtNXJsNG1nbDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=amEuamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%23F09300&color=%2333B679&color=%230B8043"></iframe>
 </section>
 
   </div>
