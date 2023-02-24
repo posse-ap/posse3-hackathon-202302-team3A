@@ -28,8 +28,9 @@ header{
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    opacity: 0.5;
-  }
+    opacity: 0.45;
+    transition:  1s ease-in-out;
+}
 
 .hero_titlebox{
   position: absolute;
@@ -40,8 +41,53 @@ header{
 
 .search{
   text-align: center;
+  margin-top: 40px;
 }
 
+.search_box{
+  width: 300px;
+  height: 30px;
+}
+
+.search_button{
+  height: 35px;
+  margin-left: 40px;
+  border-radius: 6px;
+}
+
+.cancel_button{
+  height: 35px;
+  margin-left: 5px;
+  border-radius: 6px;
+}
+
+
+#searchButton {
+  background-color: #D8E2F3; 
+  color: #333; 
+  padding: 5px 20px; 
+  font-size: 16px; 
+  cursor: pointer; 
+}
+
+#searchButton:hover {
+  background-color: #3B5998; 
+  color: #FFF; 
+}
+
+
+#cancelButton {
+  background-color: #FFE4E1; 
+  color: #333; 
+  padding: 5px 20px; 
+  font-size: 16px; 
+  cursor: pointer; 
+}
+
+#cancelButton:hover {
+  background-color: rgb(235, 84, 84); 
+  color: #FFF; 
+}
 
 
 /* モーダル */
@@ -83,3 +129,37 @@ header{
 .modal-open{
   overflow: hidden;
 }
+
+
+
+
+
+
+
+/* .hero_container {
+  position: relative;
+}
+
+.hero_images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.hero_images.active {
+  opacity: 1;
+} */
+
+/* オプション */
+/* .hero_titlebox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px #000;
+} */
