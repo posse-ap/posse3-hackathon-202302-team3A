@@ -2,16 +2,18 @@
 
 // ここから颯人
 console.log(screen.width)
+const sideNav = document.getElementById('side_nav');
 if(screen.width > 768){
-  console.log('上です！');
+  sideNav.classList.add('active');
 } else {
-  console.log('下です！');
+  sideNav.classList.remove('active');
 }
+
 
 $(window).resize(function () {
   const width = $(window).width();
   console.log(width);
-
+  
   // // $(function () {
   //   $('.side_nav').hide();
   // if(width > 768) {
@@ -28,9 +30,9 @@ $(window).resize(function () {
   // // });
 
   if(width > 768){
-    console.log('上です！');
+    sideNav.classList.add('active');
   } else {
-    console.log('下です！');
+    sideNav.classList.remove('active');
   }
 });
 
