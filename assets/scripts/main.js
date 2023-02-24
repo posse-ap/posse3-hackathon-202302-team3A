@@ -24,6 +24,9 @@ $(function () {
 
 
 //ここからいつき
+
+// ヒーロー画像スライド
+
 let slideIndex = 0;
 showSlides();
 
@@ -40,9 +43,77 @@ function showSlides() {
 }
 
 
+// ここから検索機能
 
 
+const searchButton = document.getElementById("searchButton");
+searchButton.addEventListener("click", searchSections);
 
+function searchSections() {
+  const searchInput = document.getElementById("searchInput");
+  const keyword = searchInput.value.toLowerCase();
+
+  const sections = document.querySelectorAll(".modal_container");
+  sections.forEach((section) => {
+    const name = section.querySelector(".modal_prof_box > div:first-child").textContent.toLowerCase();
+    const university = section.querySelector(".modal_prof_box > div:nth-child(3)").textContent.toLowerCase();
+    const faculity = section.querySelector(".modal_prof_box > div:nth-child(4)").textContent.toLowerCase();
+    const hobbies = section.querySelectorAll(".modal_prof_box > ul:first-child > li");
+    const addictions = section.querySelectorAll(".modal_prof_box > ul:nth-child(2) > li");
+
+    let match = false;
+
+    if (name.includes(keyword) || university.includes(keyword) || faculity.includes(keyword)) {
+      match = true;
+    }
+
+    hobbies.forEach((hobby) => {
+      if (hobby.textContent.toLowerCase().includes(keyword)) {
+        match = true;
+      }
+    });
+
+    addictions.forEach((addiction) => {
+      if (addiction.textContent.toLowerCase().includes(keyword)) {
+        match = true;
+      }
+    });
+
+    if (match) {
+      section.style.display = "block";
+    } else {
+      section.style.display = "none";
+    }
+  });
+}
+
+
+// const search = (searchText) => {
+//   const filteredData = profile.filter((item) => {
+//     return item.name.toLowerCase().includes(searchText.toLowerCase());
+//   });
+//   return filteredData;
+// };
+
+// const showResults = (results) => {
+//   const resultContainer = document.getElementById("result-container");
+//   resultContainer.innerHTML = "";
+  
+//   results.forEach((item) => {
+//     const itemElement = document.createElement("div");
+//     itemElement.innerHTML = item.name
+//     resultContainer.appendChild(itemElement);
+//   });
+
+// };
+
+
+// const searchButton = document.getElementById("search-button");
+// searchButton.addEventListener("click", () => {
+//   const searchText = document.getElementById("search-box").value;
+//   const results = search(searchText);
+//   showResults(results);
+// });
 
 
 // ここからこうよう
