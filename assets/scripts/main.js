@@ -46,7 +46,6 @@ window.addEventListener('load', function() {
 
 
 
-
 //ここからいつき
 
 // ヒーロー画像スライド
