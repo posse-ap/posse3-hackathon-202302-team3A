@@ -1,6 +1,58 @@
 'use strict';
 
+// ここからいつき
+
+
+
+// 検索機能
+
+const searchButton = document.getElementById("searchButton");
+searchButton.addEventListener("click", searchSections);
+
+function searchSections() {
+  const searchInput = document.getElementById("searchInput");
+  const keyword = searchInput.value.toLowerCase();
+
+  const sections = document.querySelectorAll(".group");
+  sections.forEach((section) => {
+    const name = section.querySelector(".group_name > div:first-child").textContent.toLowerCase();
+    // const addictions = section.querySelectorAll(".group_article> ul:nth-child > li");
+
+    let match = false;
+
+    if (name.includes(keyword) ) {
+      match = true;
+    }
+
+    // addictions.forEach((addiction) => {
+    //   if (addiction.textContent.toLowerCase().includes(keyword)) {
+    //     match = true;
+    //   }
+    // });
+    if (match) {
+      section.style.display = "grid";
+    } else {
+      section.style.display = "none";
+    }
+  });
+}
+
+// キャンセルボタンクリックでデフォルトに戻す
+function cancelSearch() {
+  const sections = document.querySelectorAll(".group");
+  
+  sections.forEach((section) => {
+    section.style.display = "grid";
+  })
+}
+const cancelButton = document.getElementById("cancelButton");
+cancelButton.addEventListener("click", cancelSearch);
+
+
+
 // ここからこうよう
+
+
 
 const group = [
   {
@@ -29,13 +81,14 @@ const group = [
   },
 ]
 
+
 const groupHtml = document.getElementById('group_wrapper');
 
 for(let i = 0; i < group.length; i++){
   groupHtml.innerHTML +=
   `<section class="group">
   <div class="group_name group_box">
-  <h3 class="group_name_text">`+group[i].name+`</h3>
+  <div class="group_name_text">`+group[i].name+`</div>
 </div>
 <div class="group_article group_box">
   <h4 class="group_article_title">`+group[i].name+`の記事</h4>
@@ -57,3 +110,4 @@ for(let i = 0; i < group.length; i++){
 </div>
 </section>`
 }
+

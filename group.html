@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="./assets/styles/hayato.css">
   <link rel="stylesheet" href="./assets/styles/koyo.css">
   <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
-  <script src="./assets/scripts/main.js" defer></script>
   <script src="./assets/scripts/group.js" defer></script>
   <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 </head>
@@ -25,6 +24,14 @@
 <!-- ここからいっちゃん -->
 
 
+<div class="search">
+  <input class="search_box" id="searchInput" type="text" placeholder="キーワードを入力して下さい">
+  <button class="search_button"  id="searchButton">検索</button>
+  <button class="cancel_button"  id="cancelButton">キャンセル</button>
+  </div>
+  <div id="result-container"></div>
+
+
 <!-- ここから颯人 -->
 <section class="">
   <h2>グループ一覧</h2>
@@ -32,7 +39,6 @@
 </section>
 
 <!--- ここからこうよう --->
-<div>検索機能</div>
 
 <div class="group_wrapper" id="group_wrapper"></div>
 
@@ -59,7 +65,7 @@
   <footer>
 
   </footer>
-  <script src="./assets/scripts/main.js"></script>
+  <script src="./assets/scripts/group.js" defer></script>
 </body>
 
 </html>
