@@ -5,6 +5,7 @@
   grid-template-columns: 40% 50% 10%;
   grid-template-rows: 80% 20%;
   margin-left: 30%;
+  margin-right: 10%;
   margin-top: 100px;
   background: #EFF2F5;
   padding-top: 0px;
@@ -36,7 +37,8 @@ div{
 .status_message_image {
   border: 3px solid black;
   position: relative;
-  top: 186px;
+  /* top: 186px; */
+  margin: 0 10%;
 }
 
 .status_message_image:before,
@@ -64,22 +66,30 @@ div{
 }
 
 .modal_prof_picture_image {
-  width: 214px;
-  height: 128px;
+  width: 80%;
+  height: 200px;
   object-fit: cover;
-  /* width: 100%; */
   position: relative;
-  top: 155px;
-  left: 46px;
-  /* justify-content: center; */
+  margin: 10%;
 }
 
-
+.modal_prof_box{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 10% 10% 0 0;
+}
 
 .sns_icon_image {
   width: 48px;
   margin:67px 8px; 
 }
+
+.first_modal_container{
+  margin: 5% 0;
+  position: relative;
+  grid-template-rows: 85% 15%;
+}
+
 
 /* ここからグループページ */
 .group_image{

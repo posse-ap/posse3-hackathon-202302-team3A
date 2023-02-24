@@ -26,18 +26,16 @@ main{
 /* サイドバー */
 .side_nav {
     background: #356178;
-    width: 170px;
+    width: 340px;
     /* 高さは再度調整すべき */
-    height: 710px;
+    height: 100vh;
     text-align: center;
     position: fixed;
     left: 0px;
     top: 0px;
     } 
 
-.side_nav {
-    color: #eee;
-} 
+
 .side_nav a{
     color: #eee;
     text-decoration: none;
