@@ -6,6 +6,7 @@
   grid-template-rows: 100% 20%;
   margin-left: 30%;
   margin-top: 100px;
+  background: #EFF2F5;
 }
 
 .interview_box{
@@ -17,9 +18,15 @@
   border: 1px solid black;
 }
 
-.status_message_image{
+/* .status_message_image{
   border: 3px solid black;
   position: relative;
+} */
+
+.status_message_image {
+  border: 3px solid black;
+  position: relative;
+  top: 186px;
 }
 
 .status_message_image:before,
@@ -45,18 +52,24 @@
   border-width: 0 39px 35px 0;
   z-index: 10;
 }
-.modal_prof_picture_image{
-  /* 画像の大きさをpx指定しています */
-  width: 128px;
+
+.modal_prof_picture_image {
+  width: 214px;
   height: 128px;
   object-fit: cover;
+  /* width: 100%; */
+  position: relative;
+  top: 155px;
+  left: 46px;
+  /* justify-content: center; */
 }
 
-.sns_icon_image{
-  /* 画像の大きさをpx指定しています */
+
+
+.sns_icon_image {
   width: 48px;
+  margin:67px 8px; 
 }
-
 
 /* ここからグループページ */
 .group_image{
