@@ -59,3 +59,8 @@
 
 
 /* ここからグループページ */
+.group_image{
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+}

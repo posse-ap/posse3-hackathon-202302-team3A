@@ -89,59 +89,56 @@ const profile = [
   },
 ]
 
-const modalProfPicture = document.getElementById('modal_prof_picture');
+const statusBox = document.getElementById(`statusBox`);
 
 for(let i = 0; i < profile.length; i++){
   
-  modalProfPicture.innerHTML = `<img class="modal_prof_picture_image" src="./assets/images/profile_image/profile[i].image"
-  alt="仮です。profの画像">`;
+statusBox.innerHTML +=
+`<section class="modal_container">`+
+      `<div class="status_box modal_box">`+
+        `<div class="status_message_box">`+
+          `<div class="modal_prof_picture">`+
+            `<img class="modal_prof_picture_image" src="./assets/images/profile_image/`+profile[i].image+`" alt="仮です。profの画像">`+
+          `</div>`+
+          `<div class="status_message_image">`+
+            `<p class="status_message_text">`+
+              `仮のテキストです`+
+            `</p>`+
+          `</div>`+
+        `</div>`+
+      `</div>`+
 
-// statusBox.innerHTML +=
-// `<section class="modal_container">`+
-//       `<div class="status_box modal_box">`+
-//         `<div class="status_message_box">`+
-//           `<div class="modal_prof_picture">`+
-//             `<img class="modal_prof_picture_image" src="./assets/images/profile_image/`+profile[i].image+`" alt="仮です。profの画像">`+
-//           `</div>`+
-//           `<div class="status_message_image">`+
-//             `<p class="status_message_text">`+
-//               `仮のテキストです`+
-//             `</p>`+
-//           `</div>`+
-//         `</div>`+
-//       `</div>`+
+      `<div class="modal_prof_box modal_box">`+
+        `<div>`+profile[i].name+`</div>`+
+        `<div>POSSE`+profile[i].POSSE+`</div>`+
+        `<div>`+profile[i].university+`</div>`+
+        `<div>`+profile[i].faculty+`</div>`+
+        `<ul id="modal_hobby">趣味`+  //for文書けたら嬉しい
+          `<li>`+profile[i].hobby[0]+`</li>`+
+          `<li>`+profile[i].hobby[1]+`</li>`+
+          `<li>`+profile[i].hobby[2]+`</li>`+
+        `</ul>`+
+        `<ul>最近ハマっていること`+
+          `<li>`+profile[i].addict[0]+`</li>`+
+          `<li>`+profile[i].addict[1]+`</li>`+
+          `<li>`+profile[i].addict[2]+`</li>`+
+        `</ul>`+
+      `</div>`+
 
-//       `<div class="modal_prof_box modal_box">`+
-//         `<div>`+profile[i].name+`</div>`+
-//         `<div>POSSE`+profile[i].POSSE+`</div>`+
-//         `<div>`+profile[i].university+`</div>`+
-//         `<div>`+profile[i].faculty+`</div>`+
-//         `<ul>趣味`+  //for文書けたら嬉しい
-//           `<li>`+profile[i].hobby[0]+`</li>`+
-//           `<li>`+profile[i].hobby[1]+`</li>`+
-//           `<li>`+profile[i].hobby[2]+`</li>`+
-//         `</ul>`+
-//         `<ul>最近ハマっていること`+
-//           `<li>`+profile[i].addict[0]+`</li>`+
-//           `<li>`+profile[i].addict[1]+`</li>`+
-//           `<li>`+profile[i].addict[2]+`</li>`+
-//         `</ul>`+
-//       `</div>`+
+      `<div class="sns_box modal_box">`+
+        `<div class="sns_icon">`+
+            `<img class="sns_icon_image" src="./assets/images/Instagram_logo.webp" alt="インスタのロゴ">`+
+        `</div>`+
+        `<div class="sns_icon">`+
+        `<a href = "`+profile[i].line+`">`+   
+        `<img class="sns_icon_image" src="./assets/images/line_logo.png" alt="Lineのロゴ">`+
+        `</a>`+
+        `</div>`+
+      `</div>`+
 
-//       `<div class="sns_box modal_box">`+
-//         `<div class="sns_icon">`+
-//             `<img class="sns_icon_image" src="./assets/images/Instagram_logo.webp" alt="インスタのロゴ">`+
-//         `</div>`+
-//         `<div class="sns_icon">`+
-//         `<a href = "`+profile[i].line+`">`+   
-//         `<img class="sns_icon_image" src="./assets/images/line_logo.png" alt="Lineのロゴ">`+
-//         `</a>`+
-//         `</div>`+
-//       `</div>`+
-
-//       `<div class="interview_box modal_box">`+
-//         `<p>仮のインタビューです</p>`+
-//       `</div>`+
-//     `</section>` 
+      `<div class="interview_box modal_box">`+
+        `<p>仮のインタビューです</p>`+
+      `</div>`+
+    `</section>` 
   
   }
