@@ -55,9 +55,9 @@
 .status_message_image:after{
   top: -34px;
   border-style: solid;
-  border-color: transparent transparent #fff transparent;
+  border-color: transparent transparent #EFF2F5 transparent;
   border-width: 0 39px 35px 0;
-  z-index: 10;
+  z-index: 0;
 }
 
 .modal_prof_picture_image {
