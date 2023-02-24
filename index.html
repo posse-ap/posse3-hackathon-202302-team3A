@@ -8,8 +8,8 @@
   <title>matchPOSSE</title>
   <link rel="stylesheet" href="./assets/styles/reset.css">
   <link rel="stylesheet" href="./assets/styles/itsuki.css">
-  <link rel="stylesheet" href="./assets/styles/hayato.css">
   <link rel="stylesheet" href="./assets/styles/koyo.css">
+  <link rel="stylesheet" href="./assets/styles/hayato.css">
   <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,7 @@
     $(function() {
         $('html,body').animate({ scrollTop: 0 }, '1');
     });
-    </script>	
+    </script>
 </head>
 
 <body>
@@ -40,15 +40,29 @@
       </div>
   </div> -->
 
+  <div class="menu" id="menu">
+    <img class="menu_image" src="/assets/images/menu.png" alt="">
+  </div>
+
+
+
     <div id="modal" class="modal">
+
+
+
+
       <div class="modal_content">
         <span class="close">&times;</span>
+
+
+
         <div class="modal_random_box" id="modal_random_box"></div>
+
+
+
+
       </div>
     </div>
-
-
-
 
 
 
@@ -87,8 +101,10 @@
     <div class="container">
       <div class="search">
         <input class="search_box" id="searchInput" type="text" placeholder="キーワードを入力して下さい">
-        <button class="search_button" id="searchButton">検索</button>
-        <button class="cancel_button" id="cancelButton">キャンセル</button>
+        <div class="button">
+          <button class="search_button" id="searchButton">検索</button>
+          <button class="cancel_button" id="cancelButton">キャンセル</button>
+        </div>
       </div>
       <div id="result-container"></div>
       <!--- ここからこうよう --->
