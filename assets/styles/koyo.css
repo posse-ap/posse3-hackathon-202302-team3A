@@ -136,7 +136,7 @@ div, h2, p{
   grid-auto-flow: column;
   grid-template-rows: 20% 32%;
   margin-left: 74px;
-  margin-top: 168px;
+  margin-top: 50px;
   margin-right: 0px;
 }
 
@@ -164,7 +164,7 @@ div, h2, p{
 
 /* メインページ */
   .side_nav{
-    display: none;
+    display:none;
   }
   .search{
     width: 200%;

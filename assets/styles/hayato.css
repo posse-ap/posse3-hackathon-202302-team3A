@@ -34,6 +34,7 @@
     left: 0px;
     top: 0px;
     color: #eee;
+    /* display: none; */
     } 
 
 
@@ -137,4 +138,13 @@
 
 .group_total {
     text-align: center;
+}
+
+.group_list_title{
+margin-left: 30%;
+margin-top: 4%;
+}
+
+.group_list_title > h2{
+    font-size: 40px;
 }

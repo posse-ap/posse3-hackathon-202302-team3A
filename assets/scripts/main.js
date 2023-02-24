@@ -1,6 +1,7 @@
 'use strict';
 
 // ここから颯人
+
 $(function () {
   $('.side_nav').hide();
 if(screen.width > 768) {
@@ -26,6 +27,41 @@ if(screen.width > 768) {
 
 
 //ここからいつき
+
+
+// サイドバー非表示
+// $(function () {
+//   if (screen.width > 768) {
+//     $('.side_nav').hide();
+//     $(window).scroll(function () {
+//       if ($(this).scrollTop() > 800) {
+//         $('.side_nav').fadeIn();
+//       } else {
+//         $('.side_nav').fadeOut();
+//       }
+//     });
+//   } else {
+//     $('.side_nav').hide();
+//   }
+// });
+
+const sideNav = document.querySelector('.side_nav');
+
+if (window.innerWidth >= 768) {
+  sideNav.classList.add('side_nav--large');
+} else {
+  sideNav.classList.add('side_nav--small');
+}
+
+window.addEventListener('resize', function() {
+  if (window.innerWidth >= 768) {
+    sideNav.classList.remove('side_nav--small');
+    sideNav.classList.add('side_nav--large');
+  } else {
+    sideNav.classList.remove('side_nav--large');
+    sideNav.classList.add('side_nav--small');
+  }
+});
 
 
 // モーダルアニメーション

@@ -9,6 +9,13 @@ header{
   animation: fadeIn 2s ease-in-out;
 } */
 
+.side_nav--large{
+  display: block;
+}
+
+.side_nav--small{
+  display: none;
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -75,8 +82,8 @@ header{
 
 .search{
   text-align: center;
-  margin-top: 40px;
   margin-left: 285px;
+  padding-top: 40px;
 }
 
 .search_box{
@@ -210,6 +217,36 @@ header{
 
 footer{
   height: 100px;
+  background-color: #ddd5c5;
+}
+
+.search_2{
+  margin-top: 30px;
+}
+
+.search_box_2{
+  width: 80%;
+  height: 30px;
+}
+
+.event-barner{
+  margin-top: 60px;
+  height: 400px;
+}
+
+.side_nav_group-1{
+  padding-top: 70px;
+}
+
+.side_nav_group-2{
+  padding-top:60px;
 }
 
 
+.side_nav_group-1>span{
+  border-bottom: 3px solid #333;
+}
+
+.side_nav_group-2>span{
+  border-bottom: 3px solid #333;
+}
