@@ -22,6 +22,7 @@ div{
 
 .interview_box{
   grid-column: 1/4;
+  padding-left: 5%;
 }
 
 
@@ -33,6 +34,10 @@ div{
   border: 3px solid black;
   position: relative;
 } */
+
+.prof_name_text{
+  font-size: 2em;
+}
 
 .status_message_image {
   border: 3px solid black;
@@ -63,6 +68,10 @@ div{
   border-color: transparent transparent #EFF2F5 transparent;
   border-width: 0 39px 35px 0;
   z-index: 0;
+}
+
+.status_message_text{
+  text-align: center;
 }
 
 .modal_prof_picture_image {
