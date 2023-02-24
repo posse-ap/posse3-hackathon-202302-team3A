@@ -57,15 +57,17 @@ function searchSections() {
   const sections = document.querySelectorAll(".modal_container");
   sections.forEach((section) => {
     const name = section.querySelector(".modal_prof_box > div:first-child").textContent.toLowerCase();
-    const posse = section.querySelector(".modal_prof_box > div:nth-child(2)").textContent.toLowerCase();
-    const university = section.querySelector(".modal_prof_box > div:nth-child(3)").textContent.toLowerCase();
-    const faculty = section.querySelector(".modal_prof_box > div:nth-child(4)").textContent.toLowerCase();
+
+    const posse = section.querySelector(".modal_prof_box > div:nth-child(1)").textContent.toLowerCase();
+    const university = section.querySelector(".modal_prof_box > div:nth-child(2)").textContent.toLowerCase();
+    // const faculty = section.querySelector(".prof_text_faculty").textContent.toLowerCase();
+
     const hobbies = section.querySelectorAll(".modal_prof_box > ul:nth-child(5)");
     const addictions = section.querySelectorAll(".modal_prof_box > ul:nth-child(6)");
 
     let match = false;
 
-    if (name.includes(keyword) || university.includes(keyword) || faculty.includes(keyword) || posse.includes(keyword)) {
+    if (name.includes(keyword) || university.includes(keyword) || posse.includes(keyword)) {
       match = true;
     }
 
@@ -258,7 +260,7 @@ statusBox.innerHTML +=
         `<div><h2>`+profile[i].name+`</h2></div>`+
         `<div class="prof_text">POSSE`+profile[i].POSSE+`</div>`+
         `<div class="prof_text">`+profile[i].university+`</div>`+
-        `<div class="prof_text">`+profile[i].faculty+`</div>`+
+        `<div class="prof_text prof_text_faculty">`+profile[i].faculty+`</div>`+
         `<ul id="modal_hobby"><h2>趣味</h2>`+  //for文書けたら嬉しい
           `<li class="prof_text">`+profile[i].hobby[0]+`</li>`+
           `<li class="prof_text">`+profile[i].hobby[1]+`</li>`+
