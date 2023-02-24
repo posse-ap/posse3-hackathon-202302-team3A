@@ -103,11 +103,25 @@ div{
   grid-template-columns: 50% 50%;
 }
 
-.group{
+/* .group{
   display: grid;
   grid-auto-flow: column;
   grid-template-rows: 20% 60%;
+} */
+
+
+
+.group {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: 20% 60%;
+  margin-left: 178px;
+  margin-top: 168px;
+  margin-right: 42px;
 }
+
+
+
 
 .group_box{
   border: 1px solid black;
@@ -116,4 +130,5 @@ div{
 .group_article{
   grid-row: 2/4;
 }
+
 
