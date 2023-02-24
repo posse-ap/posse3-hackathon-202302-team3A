@@ -61,6 +61,9 @@ header{
   border-radius: 6px;
 }
 
+.modal_prof_box > ul{
+  list-style-type: none;
+}
 
 #searchButton {
   background-color: #D8E2F3; 
