@@ -3,7 +3,7 @@
 // ここから颯人
 $(function () {
   $('.side_nav').hide();
-
+if(screen.width > 768) {
   $(window).scroll(function () {
     if ($(this).scrollTop() > 800) {
       $('.side_nav').fadeIn();
@@ -11,6 +11,7 @@ $(function () {
       $('.side_nav').fadeOut();
     }
   });
+}
 });
 
 
