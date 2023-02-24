@@ -1,19 +1,38 @@
 'use strict';
 
 // ここから颯人
-$(function () {
-  $('.side_nav').hide();
-if(screen.width > 768) {
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 800) {
-      $('.side_nav').fadeIn();
-    } else {
-      $('.side_nav').fadeOut();
-    }
-  });
+console.log(screen.width)
+if(screen.width > 768){
+  console.log('上です！');
+} else {
+  console.log('下です！');
 }
-});
 
+$(window).resize(function () {
+  const width = $(window).width();
+  console.log(width);
+
+  // // $(function () {
+  //   $('.side_nav').hide();
+  // if(width > 768) {
+  //   $(window).scroll(function () {
+  //     if ($(this).scrollTop() > 600) {
+  //       $('.side_nav').fadeIn();
+  //     } else {
+  //       $('.side_nav').fadeOut();
+  //     }
+  //   });
+  // } else {
+  //   $('.side_nav').hide();
+  // }
+  // // });
+
+  if(width > 768){
+    console.log('上です！');
+  } else {
+    console.log('下です！');
+  }
+});
 
 
 
