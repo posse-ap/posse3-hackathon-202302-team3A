@@ -252,19 +252,19 @@ statusBox.innerHTML +=
       `</div>`+
 
       `<div class="modal_prof_box modal_box">`+
-        `<div>`+profile[i].name+`</div>`+
-        `<div>POSSE`+profile[i].POSSE+`</div>`+
-        `<div>`+profile[i].university+`</div>`+
-        `<div>`+profile[i].faculty+`</div>`+
-        `<ul id="modal_hobby">趣味`+  //for文書けたら嬉しい
-          `<li>`+profile[i].hobby[0]+`</li>`+
-          `<li>`+profile[i].hobby[1]+`</li>`+
-          `<li>`+profile[i].hobby[2]+`</li>`+
+        `<div><h2>`+profile[i].name+`</h2></div>`+
+        `<div class="prof_text">POSSE`+profile[i].POSSE+`</div>`+
+        `<div class="prof_text">`+profile[i].university+`</div>`+
+        `<div class="prof_text">`+profile[i].faculty+`</div>`+
+        `<ul id="modal_hobby"><h2>趣味</h2>`+  //for文書けたら嬉しい
+          `<li class="prof_text">`+profile[i].hobby[0]+`</li>`+
+          `<li class="prof_text">`+profile[i].hobby[1]+`</li>`+
+          `<li class="prof_text">`+profile[i].hobby[2]+`</li>`+
         `</ul>`+
-        `<ul>最近ハマっていること`+
-          `<li>`+profile[i].addict[0]+`</li>`+
-          `<li>`+profile[i].addict[1]+`</li>`+
-          `<li>`+profile[i].addict[2]+`</li>`+
+        `<ul><h2>最近ハマっていること</h2>`+
+          `<li class="prof_text">`+profile[i].addict[0]+`</li>`+
+          `<li class="prof_text">`+profile[i].addict[1]+`</li>`+
+          `<li class="prof_text">`+profile[i].addict[2]+`</li>`+
         `</ul>`+
       `</div>`+
 
@@ -330,19 +330,19 @@ const randomProfPickUp = (index) =>  {
       `</div>`+
 
       `<div class="modal_prof_box modal_box">`+
-        `<div>`+profile[index].name+`</div>`+
-        `<div>POSSE`+profile[index].POSSE+`</div>`+
-        `<div>`+profile[index].university+`</div>`+
-        `<div>`+profile[index].faculty+`</div>`+
-        `<ul id="modal_hobby">趣味`+  //for文書けたら嬉しい
-          `<li>`+profile[index].hobby[0]+`</li>`+
-          `<li>`+profile[index].hobby[1]+`</li>`+
-          `<li>`+profile[index].hobby[2]+`</li>`+
+        `<div><h2>`+profile[index].name+`</h2></div>`+
+        `<div class="prof_text>POSSE`+profile[index].POSSE+`</div>`+
+        `<div class="prof_text">`+profile[index].university+`</div>`+
+        `<div class="prof_text">`+profile[index].faculty+`</div>`+
+        `<ul id="modal_hobby"><h2>趣味</h2>`+  //for文書けたら嬉しい
+          `<li class="prof_text">`+profile[index].hobby[0]+`</li>`+
+          `<li class="prof_text">`+profile[index].hobby[1]+`</li>`+
+          `<li class="prof_text">`+profile[index].hobby[2]+`</li>`+
         `</ul>`+
-        `<ul>最近ハマっていること`+
-          `<li>`+profile[index].addict[0]+`</li>`+
-          `<li>`+profile[index].addict[1]+`</li>`+
-          `<li>`+profile[index].addict[2]+`</li>`+
+        `<ul><h2>最近ハマっていること</h2>`+
+          `<li class="prof_text">`+profile[index].addict[0]+`</li>`+
+          `<li class="prof_text">`+profile[index].addict[1]+`</li>`+
+          `<li class="prof_text">`+profile[index].addict[2]+`</li>`+
         `</ul>`+
       `</div>`+
 

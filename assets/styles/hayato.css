@@ -1,5 +1,28 @@
+/* モーダル非表示版のメインに対して---------------------------------------------*/
+
+/* モーダル非表示版のプロフィール */
+.modal_container h2{
+    color: #0071BC;
+    text-align: center;
+}
+
+.prof_text{
+    text-align: center
+}
+
+
+
+
+
+
+
+
+
+
+
+/* サイドバー */
 .side_nav {
-    background-color: #ff838b;
+    background: #EFF2F5;
     width: 170px;
     /* 高さは再度調整すべき */
     height: 710px;
@@ -8,6 +31,10 @@
     left: 0px;
     top: 0px;
     } 
+
+.side_nav h2{
+
+}
 
 
 
