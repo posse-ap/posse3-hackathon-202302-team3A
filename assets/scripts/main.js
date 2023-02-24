@@ -12,9 +12,34 @@ if(screen.width > 768) {
       $('.side_nav').fadeOut();
     }
   });
-}
-});
 
+
+
+
+$(window).resize(function () {
+  const width = $(window).width();
+  console.log(width);
+  
+  // $(function () {
+    $('.side_nav').hide();
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 600) {
+        $('.side_nav').fadeIn();
+      } else {
+        $('.side_nav').fadeOut();
+      }
+    });
+  
+  // });
+
+  if(width > 768){
+    if(!sideNav.classList.contains('active'))
+    sideNav.classList.add('active');
+  } else {
+    if(sideNav.classList.contains('active'))
+    sideNav.classList.remove('active');
+  }
+});
 
 
 

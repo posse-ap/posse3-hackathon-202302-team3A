@@ -6,6 +6,32 @@
 // モーダルアニメーション
 
 
+// サイドナビゲーション
+
+const sideNav = document.getElementById('side_nav');
+if(screen.width > 768){
+  if(!sideNav.classList.contains('active')){
+    sideNav.classList.add('active');
+  }
+} else {
+  if(sideNav.classList.contains('active'))
+  sideNav.classList.remove('active');
+}
+
+
+$(window).resize(function () {
+  const width = $(window).width();
+  console.log(width);
+
+  if(width > 768){
+    if(!sideNav.classList.contains('active'))
+    sideNav.classList.add('active');
+  } else {
+    if(sideNav.classList.contains('active'))
+    sideNav.classList.remove('active');
+  }
+});
+
 
 // 検索機能
 
