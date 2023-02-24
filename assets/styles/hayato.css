@@ -1,8 +1,11 @@
 /* モーダル非表示版のメインに対して---------------------------------------------*/
+main{
+    background-color: #ddd5c5;
+}
 
 /* モーダル非表示版のプロフィール */
 .modal_container h2{
-    color: #0071BC;
+    color: #356178;
     text-align: center;
 }
 
@@ -22,7 +25,7 @@
 
 /* サイドバー */
 .side_nav {
-    background: #EFF2F5;
+    background: #356178;
     width: 170px;
     /* 高さは再度調整すべき */
     height: 710px;
@@ -32,8 +35,12 @@
     top: 0px;
     } 
 
-.side_nav h2{
-
+.side_nav {
+    color: #eee;
+} 
+.side_nav a{
+    color: #eee;
+    text-decoration: none;
 }
 
 
@@ -114,3 +121,17 @@
         text-align: center;
     }
     
+    
+
+/* グループページ-------------------------------------------- */
+
+.group_name {
+    background-color: #0071BC;
+    color: #fff;
+    text-align: center;
+    line-height: 74px;
+}
+
+.group_total {
+    line-height: 45px;
+}
