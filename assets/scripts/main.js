@@ -145,8 +145,8 @@ const profile = [
     faculty: '理工学部化学科',
     hobby: ['サッカー', 'テニス', 'バスケ'],
     addict: ['サッカー観戦', 'テニス観戦', 'バスケ観戦'],
-    message: '仮のテキストです',
-    interview: '仮のインタビューです',
+    message: 'こう見えて心は乙女です',
+    interview: '三味線のサークルとPOSSEを両立しててすごい！',
     image: 'koyo.jpg',
     line: 'https://line.me/ti/p/49ODTV_782',
   },
@@ -155,11 +155,11 @@ const profile = [
     name: '三浦颯人',
     POSSE: '③',
     university: '明治大学',
-    faculty: '理工学部電気電子工学科',
-    hobby: ['サッカー', 'テニス', 'バスケ'],
-    addict: ['サッカー観戦', 'テニス観戦', 'バスケ観戦'],
-    message: '仮のテキストです',
-    interview: '仮のインタビューです',
+    faculty:'理工学部電気電子生命学科',
+    hobby: ['漫画', 'アニメ', 'バスケ'],
+    addict: ['音楽を聴く', 'イチゴを食べる', 'バスケ観戦'],
+    message: '女しか頭にありません',
+    interview: '明日からスノボに行くんだ！！楽しみだあなぁ',
     image: 'hayato.jpg',
     line: 'https://line.me/ti/p/49ODTV_782',
   },
@@ -168,11 +168,11 @@ const profile = [
     name: '土屋一貴',
     POSSE: '③',
     university: '慶應義塾大学',
-    faculty: '理工学部物理学科',
-    hobby: ['エッチ', 'スケッチ', 'ワンタッチ'],
-    addict: ['エッチ観戦', 'スケッチ観戦', 'ワンタッチ観戦'],
-    message: '仮のテキストです',
-    interview: '仮のインタビューです',
+    faculty:'理工学部物理学科',
+    hobby: ['F1', 'M1', '日本庭園巡り'],
+    addict: ['F1観戦', 'M1観戦', 'geogessuer'],
+    message: '良い出会いないかなぁ',
+    interview: 'ハッカソン中落とした財布見つけられたよかった！',
     image: 'itsuki.jpg',
     line: 'https://line.me/ti/p/49ODTV_782',
   },
@@ -184,67 +184,70 @@ const profile = [
     faculty: '環境情報学部',
     hobby: ['散財', '変なものを集める事', 'おしゃれ'],
     addict: ['switch', 'マリカー', 'harbors'],
-    message: '仮のテキストです',
-    interview: '仮のインタビューです',
+    message: '最近はswitcにハマってるよ♪',
+    interview: 'match POSSE で良い出会い見つけたいなぁぁぁ♫',
     image: 'yudai.jpg',
   }
 ]
 
 const statusBox = document.getElementById(`statusBox`);
 
-for (let i = 0; i < profile.length; i++) {
 
-  statusBox.innerHTML +=
-    `<section class="modal_container">` +
-    `<div class="status_box modal_box">` +
-    `<div class="status_message_box">` +
-    `<div class="modal_prof_picture">` +
-    `<img class="modal_prof_picture_image" src="./assets/images/profile_image/` + profile[i].image + `" alt="仮です。profの画像">` +
-    `</div>` +
-    `<div class="status_message_image">` +
-    `<p class="status_message_text">` +
-    `仮のテキストです` +
-    `</p>` +
-    `</div>` +
-    `</div>` +
-    `</div>` +
+for(let i = 0; i < profile.length; i++){
+  
+statusBox.innerHTML +=
+`<section class="modal_container">`+
+      `<div class="status_box modal_box">`+
+        `<div class="status_message_box">`+
+          `<div class="modal_prof_picture">`+
+            `<img class="modal_prof_picture_image" src="./assets/images/profile_image/`+profile[i].image+`" alt="仮です。profの画像">`+
+          `</div>`+
+          `<div class="status_message_image">`+
+            `<p class="status_message_text">`+
+              profile[i].message+
+            `</p>`+
+          `</div>`+
+        `</div>`+
+      `</div>`+
 
-    `<div class="modal_prof_box modal_box">` +
-    `<div class="prof_name"><h2 class="prof_name_text">` + profile[i].name + `</h2></div>
+      `<div class="modal_prof_box modal_box">`+
+        `<div class="prof_name"><h2 class="prof_name_text">`+profile[i].name+`</h2></div>
         <div>`+
     `<div class="prof_text">POSSE` + profile[i].POSSE + `</div>` +
     `<div class="prof_text">` + profile[i].university + `</div>` +
     `<div class="prof_text prof_text_faculty">` + profile[i].faculty + `</div>
         </div>`+
-    `<ul id="modal_hobby"><h2>趣味</h2>` +  //for文書けたら嬉しい
-    `<li class="prof_text">` + profile[i].hobby[0] + `</li>` +
-    `<li class="prof_text">` + profile[i].hobby[1] + `</li>` +
-    `<li class="prof_text">` + profile[i].hobby[2] + `</li>` +
-    `</ul>` +
-    `<ul><h2>最近ハマっていること</h2>` +
-    `<li class="prof_text">` + profile[i].addict[0] + `</li>` +
-    `<li class="prof_text">` + profile[i].addict[1] + `</li>` +
-    `<li class="prof_text">` + profile[i].addict[2] + `</li>` +
-    `</ul>` +
-    `</div>` +
+        `<ul id="modal_hobby"><h2>趣味</h2>`+  //for文書けたら嬉しい
+          `<li class="prof_text">`+profile[i].hobby[0]+`</li>`+
+          `<li class="prof_text">`+profile[i].hobby[1]+`</li>`+
+          `<li class="prof_text">`+profile[i].hobby[2]+`</li>`+
+        `</ul>`+
+        `<ul><h2>最近ハマっていること</h2>`+
+          `<li class="prof_text">`+profile[i].addict[0]+`</li>`+
+          `<li class="prof_text">`+profile[i].addict[1]+`</li>`+
+          `<li class="prof_text">`+profile[i].addict[2]+`</li>`+
+        `</ul>`+
+      `</div>`+
 
-    `<div class="sns_box modal_box">` +
-    `<div class="sns_icon">` +
-    `<a href = "https://www.instagram.com/t.itsuki0724/">` +
-    `<img class="sns_icon_image" src="./assets/images/Instagram_logo.webp" alt="インスタのロゴ">` +
-    `</a>` +
-    `</div>` +
-    `<div class="sns_icon">` +
-    `<a href = "` + profile[i].line + `">` +
-    `<img class="sns_icon_image" src="./assets/images/line_logo.png" alt="Lineのロゴ">` +
-    `</a>` +
-    `</div>` +
-    `</div>` +
+      `<div class="sns_box modal_box">`+
+        `<div class="sns_icon">`+
+        `<a href = "https://www.instagram.com/t.itsuki0724/">`+
+        `<img class="sns_icon_image" src="./assets/images/Instagram_logo.webp" alt="インスタのロゴ">`+
+        `</a>`+
+        `</div>`+
+        `<div class="sns_icon">`+
+        `<a href = "`+profile[i].line+`">`+   
+        `<img class="sns_icon_image" src="./assets/images/line_logo.png" alt="Lineのロゴ">`+
+        `</a>`+
+        `</div>`+
+      `</div>`+
 
-    `<div class="interview_box modal_box">` +
-    `<p>仮のインタビューです</p>` +
-    `</div>` +
-    `</section>`
+      `<div class="interview_box modal_box">`+
+        `<p>`+profile[i].interview+`</p>`+
+      `</div>`+
+    `</section>` 
+  
+  }
 
 }
 
@@ -258,56 +261,56 @@ const randomBox = document.getElementById(`modal_random_box`);
 
 const randomProfPickUp = (index) => {
   randomBox.innerHTML +=
-    `<section class="modal_container first_modal_container">` +
-    `<div class="status_box modal_box">` +
-    `<div class="status_message_box">` +
-    `<div class="modal_prof_picture">` +
-    `<img class="modal_prof_picture_image" src="./assets/images/profile_image/` + profile[index].image + `" alt="仮です。profの画像">` +
-    `</div>` +
-    `<div class="status_message_image">` +
-    `<p class="status_message_text">` +
-    `仮のテキストです` +
-    `</p>` +
-    `</div>` +
-    `</div>` +
-    `</div>` +
+`<section class="modal_container first_modal_container">`+
+      `<div class="status_box modal_box">`+
+        `<div class="status_message_box">`+
+          `<div class="modal_prof_picture">`+
+            `<img class="modal_prof_picture_image" src="./assets/images/profile_image/`+profile[index].image+`" alt="仮です。profの画像">`+
+          `</div>`+
+          `<div class="status_message_image">`+
+            `<p class="status_message_text">`+
+              profile[index].message+
+            `</p>`+
+          `</div>`+
+        `</div>`+
+      `</div>`+
 
-    `<div class="modal_prof_box modal_box">` +
-    `<div class="prof_name"><h2 class="prof_name_text">` + profile[index].name + `</h2></div>
+      `<div class="modal_prof_box modal_box">`+
+        `<div class="prof_name"><h2 class="prof_name_text">`+profile[index].name+`</h2></div>
         <div>`+
     `<div class="prof_text">POSSE` + profile[index].POSSE + `</div>` +
     `<div class="prof_text">` + profile[index].university + `</div>` +
     `<div class="prof_text">` + profile[index].faculty + `</div>
         </div>`+
-    `<ul id="modal_hobby"><h2>趣味</h2>` +  //for文書けたら嬉しい
-    `<li class="prof_text">` + profile[index].hobby[0] + `</li>` +
-    `<li class="prof_text">` + profile[index].hobby[1] + `</li>` +
-    `<li class="prof_text">` + profile[index].hobby[2] + `</li>` +
-    `</ul>` +
-    `<ul><h2>最近ハマっていること</h2>` +
-    `<li class="prof_text">` + profile[index].addict[0] + `</li>` +
-    `<li class="prof_text">` + profile[index].addict[1] + `</li>` +
-    `<li class="prof_text">` + profile[index].addict[2] + `</li>` +
-    `</ul>` +
-    `</div>` +
+        `<ul id="modal_hobby"><h2>趣味</h2>`+  //for文書けたら嬉しい
+          `<li class="prof_text">`+profile[index].hobby[0]+`</li>`+
+          `<li class="prof_text">`+profile[index].hobby[1]+`</li>`+
+          `<li class="prof_text">`+profile[index].hobby[2]+`</li>`+
+        `</ul>`+
+        `<ul><h2>最近ハマっていること</h2>`+
+          `<li class="prof_text">`+profile[index].addict[0]+`</li>`+
+          `<li class="prof_text">`+profile[index].addict[1]+`</li>`+
+          `<li class="prof_text">`+profile[index].addict[2]+`</li>`+
+        `</ul>`+
+      `</div>`+
 
-    `<div class="sns_box modal_box">` +
-    `<div class="sns_icon">` +
-    `<a href = "https://www.instagram.com/t.itsuki0724/">` +
-    `<img class="sns_icon_image" src="./assets/images/Instagram_logo.webp" alt="インスタのロゴ">` +
-    `</a>` +
-    `</div>` +
-    `<div class="sns_icon">` +
-    `<a href = "` + profile[index].line + `">` +
-    `<img class="sns_icon_image" src="./assets/images/line_logo.png" alt="Lineのロゴ">` +
-    `</a>` +
-    `</div>` +
-    `</div>` +
+      `<div class="sns_box modal_box">`+
+        `<div class="sns_icon">`+
+        `<a href = "https://www.instagram.com/t.itsuki0724/">`+    
+        `<img class="sns_icon_image" src="./assets/images/Instagram_logo.webp" alt="インスタのロゴ">`+
+        `</a>`+
+        `</div>`+
+        `<div class="sns_icon">`+
+        `<a href = "`+profile[index].line+`">`+   
+        `<img class="sns_icon_image" src="./assets/images/line_logo.png" alt="Lineのロゴ">`+
+        `</a>`+
+        `</div>`+
+      `</div>`+
 
-    `<div class="interview_box modal_box">` +
-    `<p>仮のインタビューです</p>` +
-    `</div>` +
-    `</section>`
+      `<div class="interview_box modal_box">`+
+        `<p>`+profile[index].interview+`</p>`+
+      `</div>`+
+    `</section>` 
 
 
 }
