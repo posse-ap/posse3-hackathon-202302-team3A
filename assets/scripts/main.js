@@ -57,9 +57,11 @@ function searchSections() {
   const sections = document.querySelectorAll(".modal_container");
   sections.forEach((section) => {
     const name = section.querySelector(".modal_prof_box > div:first-child").textContent.toLowerCase();
+
     const posse = section.querySelector(".modal_prof_box > div:nth-child(1)").textContent.toLowerCase();
     const university = section.querySelector(".modal_prof_box > div:nth-child(2)").textContent.toLowerCase();
     // const faculty = section.querySelector(".prof_text_faculty").textContent.toLowerCase();
+
     const hobbies = section.querySelectorAll(".modal_prof_box > ul:nth-child(5)");
     const addictions = section.querySelectorAll(".modal_prof_box > ul:nth-child(6)");
 
@@ -224,6 +226,7 @@ const profile = [
   {
     id: 4,
     name: '猪瀬雄大',
+    POSSE:'①',
     university :'慶應義塾大学',
     faculty:'環境情報学部',
     hobby: ['散財', '変なものを集める事', 'おしゃれ'],
