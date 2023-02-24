@@ -11,7 +11,11 @@ if(screen.width > 768) {
     } else {
       $('.side_nav').fadeOut();
     }
-  });
+  }
+  )
+}
+}
+);
 
 
 
