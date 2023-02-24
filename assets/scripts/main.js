@@ -94,10 +94,9 @@ function searchSections() {
 
     const posse = section.querySelector(".modal_prof_box > div:nth-child(1)").textContent.toLowerCase();
     const university = section.querySelector(".modal_prof_box > div:nth-child(2)").textContent.toLowerCase();
-    // const faculty = section.querySelector(".prof_text_faculty").textContent.toLowerCase();
-
-    const hobbies = section.querySelectorAll(".modal_prof_box > ul:nth-child(5)");
-    const addictions = section.querySelectorAll(".modal_prof_box > ul:nth-child(6)");
+    // const faculty = section.querySelector(".modal_prof_box > div:nth-child(3)").textContent.toLowerCase();
+    const hobbies = section.querySelectorAll(".modal_prof_box > ul:nth-child(4)");
+    const addictions = section.querySelectorAll(".modal_prof_box > ul:nth-child(5)");
 
     let match = false;
 
