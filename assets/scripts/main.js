@@ -80,7 +80,7 @@ function searchSections() {
     });
 
     if (match) {
-      section.style.display = "block";
+      section.style.display = "grid";
     } else {
       section.style.display = "none";
     }
@@ -92,7 +92,7 @@ function cancelSearch() {
 
   const sections = document.querySelectorAll(".modal_container");
   sections.forEach((section) => {
-    section.style.display = "block";
+    section.style.display = "grid";
   });
 }
 
