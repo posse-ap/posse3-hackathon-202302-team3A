@@ -22,6 +22,7 @@ div{
 
 .interview_box{
   grid-column: 1/4;
+  padding-left: 5%;
 }
 
 
@@ -33,6 +34,10 @@ div{
   border: 3px solid black;
   position: relative;
 } */
+
+.prof_name_text{
+  font-size: 2em;
+}
 
 .status_message_image {
   border: 3px solid black;
@@ -63,6 +68,10 @@ div{
   border-color: transparent transparent #EFF2F5 transparent;
   border-width: 0 39px 35px 0;
   z-index: 0;
+}
+
+.status_message_text{
+  text-align: center;
 }
 
 .modal_prof_picture_image {
@@ -101,6 +110,8 @@ div{
 .group_wrapper{
   display: grid;
   grid-template-columns: 50% 50%;
+  margin-left: 30%;
+    margin-right: 10%;
 }
 
 /* .group{
@@ -115,9 +126,8 @@ div{
   display: grid;
   grid-auto-flow: column;
   grid-template-rows: 20% 60%;
-  margin-left: 178px;
+  margin-left: 20px;
   margin-top: 168px;
-  margin-right: 42px;
 }
 
 
