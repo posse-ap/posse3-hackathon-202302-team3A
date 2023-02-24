@@ -568,7 +568,7 @@ margin-top: 4%;
     position: fixed;
     z-index: 99;
     top: 60px;
-    left: 20px;
+    /* left: 20px; */
 }
 
 
@@ -618,14 +618,14 @@ margin-top: 4%;
 /* レスポンシブ -------------------------------------*/
 /* 768 x 1366 */
 
-@media screen and (max-width: 868px){
+@media screen and (max-width: 768px){
 
     /* メインページ ----------------------------------*/
       .side_nav{
         display: none;
       }
       .search{
-        width: 200%;
+        width: 100%;
         text-align: left;
         margin-left: 10px;
       }
@@ -640,6 +640,7 @@ margin-top: 4%;
 
         .group_list_title{
             margin-left: 20%;
+        }
         .modal_container{
             margin: 100px 5%;
         }
@@ -670,7 +671,7 @@ margin-top: 4%;
             height: 300px;
         }
         .menu{
-            display: none;
+            display: block;
             position: fixed;
             z-index: 99;
             top: 20px;

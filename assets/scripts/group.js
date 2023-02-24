@@ -171,3 +171,14 @@ for(let i = 0; i < group.length; i++){
 </section>`
 }
 
+
+// ここからメニュー
+const menu = document.getElementById('menu');
+menu.addEventListener('click', () => {
+  sideNav.classList.toggle('active');
+  if(sideNav.classList.contain('active')){
+    $('.side_nav').fadeOut();
+  } else {
+    $('.side_nav').fadeIn();
+  }
+})
