@@ -110,6 +110,8 @@ div{
 .group_wrapper{
   display: grid;
   grid-template-columns: 50% 50%;
+  margin-left: 30%;
+    margin-right: 10%;
 }
 
 /* .group{
@@ -124,9 +126,8 @@ div{
   display: grid;
   grid-auto-flow: column;
   grid-template-rows: 20% 60%;
-  margin-left: 178px;
+  margin-left: 20px;
   margin-top: 168px;
-  margin-right: 42px;
 }
 
 
