@@ -64,3 +64,22 @@
   height: 128px;
   object-fit: cover;
 }
+
+.group_wrapper{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.group{
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: 20% 60%;
+}
+
+.group_box{
+  border: 1px solid black;
+}
+
+.group_article{
+  grid-row: 2/4;
+}
