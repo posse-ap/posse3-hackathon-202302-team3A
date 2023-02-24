@@ -1,5 +1,5 @@
 /* モーダル非表示版のメインに対して---------------------------------------------*/
-main{
+.container{
     background-color: #ddd5c5;
 }
 
@@ -33,6 +33,7 @@ main{
     position: fixed;
     left: 0px;
     top: 0px;
+    color: #eee;
     } 
 
 
