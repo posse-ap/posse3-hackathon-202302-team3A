@@ -205,3 +205,14 @@ header{
   color: white;
   text-shadow: 2px 2px #000;
 } */
+
+footer{
+  height: 100px;
+}
+
+
+@media  (max-width: 768px) {
+  .side_nav{
+    display: none;
+  }
+}
