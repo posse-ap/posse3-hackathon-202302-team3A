@@ -1,11 +1,13 @@
 'use strict';
 
 // ここから颯人
-console.log(screen.width)
 const sideNav = document.getElementById('side_nav');
 if(screen.width > 768){
-  sideNav.classList.add('active');
+  if(!sideNav.classList.contains('active')){
+    sideNav.classList.add('active');
+  }
 } else {
+  if(sideNav.classList.contains('active'))
   sideNav.classList.remove('active');
 }
 
@@ -14,24 +16,23 @@ $(window).resize(function () {
   const width = $(window).width();
   console.log(width);
   
-  // // $(function () {
-  //   $('.side_nav').hide();
-  // if(width > 768) {
-  //   $(window).scroll(function () {
-  //     if ($(this).scrollTop() > 600) {
-  //       $('.side_nav').fadeIn();
-  //     } else {
-  //       $('.side_nav').fadeOut();
-  //     }
-  //   });
-  // } else {
-  //   $('.side_nav').hide();
-  // }
-  // // });
+  // $(function () {
+    $('.side_nav').hide();
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 600) {
+        $('.side_nav').fadeIn();
+      } else {
+        $('.side_nav').fadeOut();
+      }
+    });
+  
+  // });
 
   if(width > 768){
+    if(!sideNav.classList.contains('active'))
     sideNav.classList.add('active');
   } else {
+    if(sideNav.classList.contains('active'))
     sideNav.classList.remove('active');
   }
 });
