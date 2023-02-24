@@ -2,49 +2,47 @@
 
 // ここから颯人
 
-$(function () {
-  $('.side_nav').hide();
-if(screen.width > 768) {
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 800) {
-      $('.side_nav').fadeIn();
-    } else {
-      $('.side_nav').fadeOut();
-    }
-  }
-  )
-}
-}
-);
+// $(function () {
+//   $('.side_nav').hide();
+// if(screen.width > 768) {
+//   $(window).scroll(function () {
+//     if ($(this).scrollTop() > 600) {
+//       $('.side_nav').fadeIn();
+//     } else {
+//       $('.side_nav').fadeOut();
+//     }
+//   }
+//   )
+// }
+// });
 
 
-
-
-$(window).resize(function () {
-  const width = $(window).width();
-  console.log(width);
-  if(width > 768){
-    if(!sideNav.classList.contains('active'))
-    sideNav.classList.add('active');
-  } else {
-    if(sideNav.classList.contains('active'))
-    sideNav.classList.remove('active');
-  }
-  
-  // $(function () {
-    $('.side_nav').hide();
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > 600) {
-        $('.side_nav').fadeIn();
-      } else {
-        $('.side_nav').fadeOut();
-      }
-    });
-  
-  // });
+// $(window).resize(function () {
+//   const width = $(window).width();
+//   console.log(width);
+//   if(width > 768){
+//     if(!sideNav.classList.contains('active'))
+//     sideNav.classList.add('active');
+//   } else {
+//     if(sideNav.classList.contains('active'))
+//     sideNav.classList.remove('active');
+//   }
 
   
-});
+//   // $(function () {
+//     $('.side_nav').hide();
+//     $(window).scroll(function () {
+//       if ($(this).scrollTop() > 600) {
+//         $('.side_nav').fadeIn();
+//       } else {
+//         $('.side_nav').fadeOut();
+//       }
+//     });
+  
+//   // });
+
+// });
+
 
 
 
@@ -98,6 +96,7 @@ window.addEventListener('resize', function() {
 const modal = document.getElementById("modal");
 
 let opacity = 0;
+
 const animation = setInterval(() => {
   if (opacity >= 1) {
     clearInterval(animation);
@@ -105,6 +104,7 @@ const animation = setInterval(() => {
   modal.style.opacity = opacity;
   opacity += 0.01;
 }, 22);
+
 
 
 // ヒーロー画像スライド
@@ -253,12 +253,14 @@ window.onload = function() {
 span.onclick = function() {
   modal.style.display = "none";
   document.body.classList.remove("modal-open");
+  menu.classList.add("menu_active")
 }
 
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
     document.body.classList.remove("modal-open");
+    menu.classList.add("menu_active")
   }
 }
 
@@ -465,3 +467,15 @@ const randomProfPickUp = (index) =>  {
   }
 
   randomProfPickUp(randomIndex);
+
+
+  // ここからメニュー
+  const menu = document.getElementById('menu');
+  menu.addEventListener('click', () => {
+    sideNav.classList.toggle('active');
+    if(sideNav.classList.contain('active')){
+      $('.side_nav').fadeOut();
+    } else {
+      $('.side_nav').fadeIn();
+    }
+  })
