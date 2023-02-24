@@ -282,7 +282,7 @@ const profile = [
     hobby: ['サッカー', 'テニス', 'バスケ'],
     addict: ['サッカー観戦', 'テニス観戦', 'バスケ観戦'],
     message: '仮のテキストです',
-    interview: '仮のインタビューです',
+    interview: '三味線のサークルとPOSSEを両立しててすごい！',
     image: 'koyo.jpg',
     line:'https://line.me/ti/p/49ODTV_782',
   },
@@ -291,9 +291,9 @@ const profile = [
     name: '三浦颯人',
     POSSE: '③',
     university: '明治大学',
-    faculty:'理工学部電気電子工学科',
-    hobby: ['サッカー', 'テニス', 'バスケ'],
-    addict: ['サッカー観戦', 'テニス観戦', 'バスケ観戦'],
+    faculty:'理工学部電気電子生命学科',
+    hobby: ['漫画', 'アニメ', 'バスケ'],
+    addict: ['音楽を聴く', 'イチゴを食べる', 'バスケ観戦'],
     message: '仮のテキストです',
     interview: '仮のインタビューです',
     image: 'hayato.jpg',
@@ -305,10 +305,10 @@ const profile = [
     POSSE: '③',
     university: '慶應義塾大学',
     faculty:'理工学部物理学科',
-    hobby: ['エッチ', 'スケッチ', 'ワンタッチ'],
-    addict: ['エッチ観戦', 'スケッチ観戦', 'ワンタッチ観戦'],
+    hobby: ['F1', 'M1', '日本庭園巡り'],
+    addict: ['F1観戦', 'M1観戦', 'geogessuer'],
     message: '仮のテキストです',
-    interview: '仮のインタビューです',
+    interview: 'ハッカソン中落とした財布見つけられたよかった！',
     image: 'itsuki.jpg',
     line:'https://line.me/ti/p/49ODTV_782',
   },
@@ -339,7 +339,7 @@ statusBox.innerHTML +=
           `</div>`+
           `<div class="status_message_image">`+
             `<p class="status_message_text">`+
-              `仮のテキストです`+
+              profile[i].message+
             `</p>`+
           `</div>`+
         `</div>`+
@@ -378,7 +378,7 @@ statusBox.innerHTML +=
       `</div>`+
 
       `<div class="interview_box modal_box">`+
-        `<p>仮のインタビューです</p>`+
+        `<p>`+profile[i].interview+`</p>`+
       `</div>`+
     `</section>` 
   
@@ -420,7 +420,7 @@ const randomProfPickUp = (index) =>  {
           `</div>`+
           `<div class="status_message_image">`+
             `<p class="status_message_text">`+
-              `仮のテキストです`+
+              profile[index].message+
             `</p>`+
           `</div>`+
         `</div>`+
@@ -459,7 +459,7 @@ const randomProfPickUp = (index) =>  {
       `</div>`+
 
       `<div class="interview_box modal_box">`+
-        `<p>仮のインタビューです</p>`+
+        `<p>`+profile[index].interview+`</p>`+
       `</div>`+
     `</section>` 
   
