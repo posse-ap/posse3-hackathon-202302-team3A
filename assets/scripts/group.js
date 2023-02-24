@@ -101,7 +101,7 @@ for(let i = 0; i < group.length; i++){
   </ul>
 </div>
 <div class="group_total group_box">
-  <p>`+group[i].total+`人が参加しています</p>
+  <p class="group_total_text">`+group[i].total+`人が参加しています</p>
 </div>
 <div class="group_box">
   <img class="group_image" src="./assets/images/group_image/`+group[i].image+`" alt="">
