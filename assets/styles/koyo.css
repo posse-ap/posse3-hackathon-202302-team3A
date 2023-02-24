@@ -109,7 +109,7 @@ div{
 
 .group_wrapper{
   display: grid;
-  grid-template-columns: 50% 50%;
+  /* grid-template-columns: 50% 50%; */
   margin-left: 30%;
     margin-right: 10%;
 }
@@ -121,7 +121,7 @@ div{
 } */
 
 
-
+/* 
 .group {
   display: grid;
   grid-auto-flow: column;
@@ -129,12 +129,23 @@ div{
   margin-left: 20px;
   margin-top: 168px;
 }
+ */
+
+.group {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: 20% 32%;
+  margin-left: 74px;
+  margin-top: 168px;
+  margin-right: 0px;
+}
 
 
 
 
 .group_box{
   border: 1px solid black;
+  background-color: #EFF2F5;
 }
 
 .group_article{
