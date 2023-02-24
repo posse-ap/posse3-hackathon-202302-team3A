@@ -5,7 +5,7 @@ $(function () {
   $('.side_nav').hide();
 
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 800) {
+    if ($(this).scrollTop() > 600) {
       $('.side_nav').fadeIn();
     } else {
       $('.side_nav').fadeOut();
@@ -254,7 +254,7 @@ const profile = [
     addict: ['switch', 'マリカー', 'harbors'],
     message: '仮のテキストです',
     interview: '仮のインタビューです',
-    image: 'itsuki.jpg',
+    image: 'yudai.jpg',
   }
 ]
 
@@ -278,10 +278,12 @@ statusBox.innerHTML +=
       `</div>`+
 
       `<div class="modal_prof_box modal_box">`+
-        `<div><h2>`+profile[i].name+`</h2></div>`+
+        `<div class="prof_name"><h2 class="prof_name_text">`+profile[i].name+`</h2></div>
+        <div>`+
         `<div class="prof_text">POSSE`+profile[i].POSSE+`</div>`+
         `<div class="prof_text">`+profile[i].university+`</div>`+
-        `<div class="prof_text prof_text_faculty">`+profile[i].faculty+`</div>`+
+        `<div class="prof_text prof_text_faculty">`+profile[i].faculty+`</div>
+        </div>`+
         `<ul id="modal_hobby"><h2>趣味</h2>`+  //for文書けたら嬉しい
           `<li class="prof_text">`+profile[i].hobby[0]+`</li>`+
           `<li class="prof_text">`+profile[i].hobby[1]+`</li>`+
@@ -335,13 +337,12 @@ statusBox.innerHTML +=
 // const profArray = shuffle(profile)
 
 const randomIndex = Math.floor(Math.random() *(profile.length));
-console.log(profile[randomIndex].name);
 
 const randomBox = document.getElementById(`modal_random_box`);
 
 const randomProfPickUp = (index) =>  { 
   randomBox.innerHTML +=
-`<section class="modal_container">`+
+`<section class="modal_container first_modal_container">`+
       `<div class="status_box modal_box">`+
         `<div class="status_message_box">`+
           `<div class="modal_prof_picture">`+
@@ -356,10 +357,12 @@ const randomProfPickUp = (index) =>  {
       `</div>`+
 
       `<div class="modal_prof_box modal_box">`+
-        `<div><h2>`+profile[index].name+`</h2></div>`+
-        `<div class="prof_text>POSSE`+profile[index].POSSE+`</div>`+
+        `<div class="prof_name"><h2 class="prof_name_text">`+profile[index].name+`</h2></div>
+        <div>`+
+        `<div class="prof_text">POSSE`+profile[index].POSSE+`</div>`+
         `<div class="prof_text">`+profile[index].university+`</div>`+
-        `<div class="prof_text">`+profile[index].faculty+`</div>`+
+        `<div class="prof_text">`+profile[index].faculty+`</div>
+        </div>`+
         `<ul id="modal_hobby"><h2>趣味</h2>`+  //for文書けたら嬉しい
           `<li class="prof_text">`+profile[index].hobby[0]+`</li>`+
           `<li class="prof_text">`+profile[index].hobby[1]+`</li>`+
