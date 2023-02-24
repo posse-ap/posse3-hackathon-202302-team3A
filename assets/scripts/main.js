@@ -223,7 +223,7 @@ const profile = [
     id: 4,
     name: '猪瀬雄大',
     university :'慶應義塾大学',
-    faculity:'環境情報学部',
+    faculty:'環境情報学部',
     hobby: ['散財', '変なものを集める事', 'おしゃれ'],
     addict: ['switch', 'マリカー', 'harbors'],
     message: '仮のテキストです',
