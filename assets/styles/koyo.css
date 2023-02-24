@@ -1,3 +1,5 @@
+/* ここからメインページ */
+
 .modal_container{
   display: grid;
   grid-template-columns: 40% 50% 8%;
@@ -46,10 +48,19 @@
 .modal_prof_picture_image{
   /* 画像の大きさをpx指定しています */
   width: 128px;
+  height: 128px;
   object-fit: cover;
 }
 
 .sns_icon_image{
   /* 画像の大きさをpx指定しています */
   width: 48px;
+}
+
+
+/* ここからグループページ */
+.group_image{
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
 }

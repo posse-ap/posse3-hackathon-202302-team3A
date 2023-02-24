@@ -1,3 +1,4 @@
+'use strict';
 
 // ここから颯人
 $(function () {
@@ -184,7 +185,7 @@ const profile = [
     name: '飯田紅葉',
     POSSE: '③',
     university: '慶應義塾大学',
-    faculity:'理工学部化学科',
+    faculty:'理工学部化学科',
     hobby: ['サッカー', 'テニス', 'バスケ'],
     addict: ['サッカー観戦', 'テニス観戦', 'バスケ観戦'],
     message: '仮のテキストです',
@@ -197,7 +198,7 @@ const profile = [
     name: '三浦颯人',
     POSSE: '③',
     university: '明治大学',
-    faculity:'理工学部電気電子工学科',
+    faculty:'理工学部電気電子工学科',
     hobby: ['サッカー', 'テニス', 'バスケ'],
     addict: ['サッカー観戦', 'テニス観戦', 'バスケ観戦'],
     message: '仮のテキストです',
@@ -210,7 +211,7 @@ const profile = [
     name: '土屋一貴',
     POSSE: '③',
     university: '慶應義塾大学',
-    faculity:'理工学部物理学科',
+    faculty:'理工学部物理学科',
     hobby: ['エッチ', 'スケッチ', 'ワンタッチ'],
     addict: ['エッチ観戦', 'スケッチ観戦', 'ワンタッチ観戦'],
     message: '仮のテキストです',
@@ -233,7 +234,8 @@ const profile = [
 
 const statusBox = document.getElementById(`statusBox`);
 
-for(let i = 0 ;i < profile.length; i++){
+for(let i = 0; i < profile.length; i++){
+  
 statusBox.innerHTML +=
 `<section class="modal_container">`+
       `<div class="status_box modal_box">`+
@@ -253,8 +255,8 @@ statusBox.innerHTML +=
         `<div>`+profile[i].name+`</div>`+
         `<div>POSSE`+profile[i].POSSE+`</div>`+
         `<div>`+profile[i].university+`</div>`+
-        `<div>`+profile[i].faculity+`</div>`+
-        `<ul>趣味`+
+        `<div>`+profile[i].faculty+`</div>`+
+        `<ul id="modal_hobby">趣味`+  //for文書けたら嬉しい
           `<li>`+profile[i].hobby[0]+`</li>`+
           `<li>`+profile[i].hobby[1]+`</li>`+
           `<li>`+profile[i].hobby[2]+`</li>`+
