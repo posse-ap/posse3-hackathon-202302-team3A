@@ -46,7 +46,6 @@ window.addEventListener('load', function() {
 
 
 
-
 //ここからいつき
 let slideIndex = 0;
 showSlides();
