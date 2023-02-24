@@ -4,7 +4,7 @@ $(function () {
   $('.side_nav').hide();
 
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 700) {
+    if ($(this).scrollTop() > 800) {
       $('.side_nav').fadeIn();
     } else {
       $('.side_nav').fadeOut();
@@ -14,31 +14,8 @@ $(function () {
 
 
 
-// モーダルウィンドウ
-window.addEventListener('load', function() {
-  if(!localStorage.getItem('disp_popup')) {
-      localStorage.setItem('disp_popup', 'on');
-      const body = document.querySelector('body');
-      const bgPopup = document.querySelector('.bg_onetime_popup');
-      const popup = document.querySelector('.onetime_popup');
-      const popupTitleClose = document.querySelector('.onetime_popup_title_close');
-      body.classList.add('open_popup');
 
-      bgPopup.addEventListener('click', function() {
-          closePopup();
-      });
-      popup.addEventListener('click', function(e) {
-          e.stopPropagation();
-      });
-      popupTitleClose.addEventListener('click', function() {
-          closePopup();
-      });
 
-      function closePopup() {
-          body.classList.remove('open_popup');
-      }
-  }
-}, false);
 
 
 
@@ -111,6 +88,18 @@ function searchSections() {
 }
 
 
+function cancelSearch() {
+
+  const sections = document.querySelectorAll(".modal_container");
+  sections.forEach((section) => {
+    section.style.display = "block";
+  });
+}
+
+const cancelButton = document.getElementById("cancelButton");
+cancelButton.addEventListener("click", cancelSearch);
+
+
 // const search = (searchText) => {
 //   const filteredData = profile.filter((item) => {
 //     return item.name.toLowerCase().includes(searchText.toLowerCase());
@@ -138,6 +127,55 @@ function searchSections() {
 //   showResults(results);
 // });
 
+
+// モーダルウィンドウ
+// window.addEventListener('load', function() {
+//   if(!localStorage.getItem('disp_popup')) {
+//       localStorage.setItem('disp_popup', 'on');
+//       const body = document.querySelector('body');
+//       const bgPopup = document.querySelector('.bg_onetime_popup');
+//       const popup = document.querySelector('.onetime_popup');
+//       const popupTitleClose = document.querySelector('.onetime_popup_title_close');
+//       body.classList.add('open_popup');
+
+//       bgPopup.addEventListener('click', function() {
+//           closePopup();
+//       });
+//       popup.addEventListener('click', function(e) {
+//           e.stopPropagation();
+//       });
+//       popupTitleClose.addEventListener('click', function() {
+//           closePopup();
+//       });
+
+//       function closePopup() {
+//           body.classList.remove('open_popup');
+//       }
+//   }
+// }, false);
+
+// モーダルを取得する
+var modal = document.getElementById("modal");
+
+
+var span = document.getElementsByClassName("close")[0];
+
+window.onload = function() {
+  modal.style.display = "block";
+  document.body.classList.add("modal-open");
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+  document.body.classList.remove("modal-open");
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+    document.body.classList.remove("modal-open");
+  }
+}
 
 // ここからこうよう
 const profile = [
@@ -180,6 +218,17 @@ const profile = [
     image: 'itsuki.jpg',
     line:'https://line.me/ti/p/49ODTV_782',
   },
+  {
+    id: 4,
+    name: '猪瀬雄大',
+    university :'慶應義塾大学',
+    faculity:'環境情報学部',
+    hobby: ['散財', '変なものを集める事', 'おしゃれ'],
+    addict: ['switch', 'マリカー', 'harbors'],
+    message: '仮のテキストです',
+    interview: '仮のインタビューです',
+    image: 'itsuki.jpg',
+  }
 ]
 
 const statusBox = document.getElementById(`statusBox`);
