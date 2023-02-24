@@ -15,10 +15,10 @@
   <script src="./assets/scripts/main.js" defer></script>
   <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
   <script>
-    $(function() {
-        $('html,body').animate({ scrollTop: 0 }, '1');
+    $(function () {
+      $('html,body').animate({ scrollTop: 0 }, '1');
     });
-    </script>
+  </script>
 </head>
 
 <body>
@@ -27,72 +27,47 @@
   </header>
   <main>
 
-    <!-- モーダル部分 -->
-    <!-- <div class="onetime_popup">
-      <div class="onetime_popup_title">
-          <span class="onetime_popup_title_close"></span>
-          <span>お前はだれだ</span>
-      </div>
-      <div class="onetime_popup_content">
-          <p>オレの中のオレ</p>
-      </div>
-  </div> -->
+    <!-- ここからメニュー -->
 
-  <!-- ここからメニュー -->
-
-  <div class="menu" id="menu">
-    <img class="menu_image" src="./assets/images/menu.png" alt="">
-  </div>
-
-
+    <div class="menu" id="menu">
+      <img class="menu_image" src="./assets/images/menu.png" alt="">
+    </div>
 
     <div id="modal" class="modal">
-
-
-
-
       <div class="modal_content">
         <span class="close">&times;</span>
-
-
-
         <div class="modal_random_box" id="modal_random_box"></div>
-
-
-
-
       </div>
     </div>
 
 
-
-
-<!-- ここからいっちゃん -->
-<section>
-  <div class="hero_container">
-    <img class="hero_images" src="./assets/images/hero/hero-1.jpg">
-    <img class="hero_images" src="./assets/images/hero/hero-2.jpg">
-    <img class="hero_images" src="./assets/images/hero/hero-3.jpg">
-    <img class="hero_images" src="./assets/images/hero/hero-4.jpg">
-    <img class="hero_images" src="./assets/images/hero/hero-5.jpg">
-    <img class="hero_images" src="./assets/images/hero/hero-6.jpg">
-    <img class="hero_images" src="./assets/images/hero/hero-7.jpg">
-    <img class="hero_images" src="./assets/images/hero/hero-8.jpg">
-    <img class="hero_images" src="./assets/images/hero/hero-9.jpg">
-    <img class="hero_images" src="./assets/images/hero/hero-10.jpg">
-    <img class="hero_images" src="./assets/images/hero/hero-11.jpg">
-    <img class="hero_images" src="./assets/images/hero/hero-12.jpg">
-    <div class="bar"></div>
-    <div class="hero_titlebox">
-      <div class="hero_catchcopy">
-        <h1>match</h1><br><h2>POSSE</h2>
+    <!-- ここからいっちゃん -->
+    <section>
+      <div class="hero_container">
+        <img class="hero_images" src="./assets/images/hero/hero-1.jpg">
+        <img class="hero_images" src="./assets/images/hero/hero-2.jpg">
+        <img class="hero_images" src="./assets/images/hero/hero-3.jpg">
+        <img class="hero_images" src="./assets/images/hero/hero-4.jpg">
+        <img class="hero_images" src="./assets/images/hero/hero-5.jpg">
+        <img class="hero_images" src="./assets/images/hero/hero-6.jpg">
+        <img class="hero_images" src="./assets/images/hero/hero-7.jpg">
+        <img class="hero_images" src="./assets/images/hero/hero-8.jpg">
+        <img class="hero_images" src="./assets/images/hero/hero-9.jpg">
+        <img class="hero_images" src="./assets/images/hero/hero-10.jpg">
+        <img class="hero_images" src="./assets/images/hero/hero-11.jpg">
+        <img class="hero_images" src="./assets/images/hero/hero-12.jpg">
+        <div class="bar"></div>
+        <div class="hero_titlebox">
+          <div class="hero_catchcopy">
+            <h1>match</h1><br>
+            <h2>POSSE</h2>
+          </div>
+        </div>
+        <h2 class="hero_subtitle_box">
+          ~posseメンバーに<br><span class="hero_subtitle_bottom">素敵な</span>出会いを~
+        </h2>
       </div>
-    </div>
-    <h2 class="hero_subtitle_box">
-      ~posseメンバーに<br><span class="hero_subtitle_bottom">素敵な</span>出会いを~
-    </h2>
-  </div>
-</section>
+    </section>
 
 
 
@@ -101,58 +76,44 @@
     <div class="container">
       <div class="search">
         <input class="search_box" id="searchInput" type="text" placeholder="キーワードを入力して下さい">
-        <!-- <div class="button"> -->
-          <button class="search_button" id="searchButton">検索</button>
-          <button class="cancel_button" id="cancelButton">キャンセル</button>
-        <!-- </div> -->
+        <button class="search_button" id="searchButton">検索</button>
+        <button class="cancel_button" id="cancelButton">キャンセル</button>
       </div>
       <div id="result-container"></div>
+
       <!--- ここからこうよう --->
       <!-- 自己紹介部分 -->
       <div class="statusBox" id="statusBox"></div>
-      
-      
-      
 
-      
-      
     </div>
-
     <div id="result-container"></div>
-
-    <!--- ここからこうよう --->
-    <!-- 自己紹介部分 -->
-
-    <div class="statusBox" id="statusBox"></div>
+    <!-- ここから颯人 -->
 
 
-<!-- ここから颯人 -->
-
-
-<!-- ここからサイドナビゲーション -->
-<section class="side_nav" id="side_nav">
-  <div class="search_2">
-    <div><input class="search_box_2" id="searchInput" type="text" placeholder="キーワードを入力して下さい"></div>
-    <button class="search_button_2" id="searchButton">検索</button>
-    <button class="cancel_button_2" id="cancelButton">キャンセル</button>
-  </div>
-  <div class="side_nav_group_box">
-    <a href="./index.html">
-      <h2 class="side_nav_group-1"><span>プロフィールページへ</span></h2>
-    </a>
-    <a href="./group.html">
-      <h2 class="side_nav_group-2"><span>グループページへ</span></h2>
-    </a>
-  </div>
-  <iframe class="event-barner" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FTokyo&title=%E3%83%AA%E3%82%A2%E3%82%A4%E3%83%99%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC&showTabs=0&showPrint=0&src=dHN1Y2hpeWEuaXRzdWtpMDcyNEBnbWFpbC5jb20&src=aTQ5dDBrN2U3dHZrYTlhNXNtNXJsNG1nbDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=amEuamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%23F09300&color=%2333B679&color=%230B8043"></iframe>
-</section>
-
+    <!-- ここからサイドナビゲーション -->
+    <section class="side_nav" id="side_nav">
+      <div class="search_2">
+        <div><input class="search_box_2" id="searchInput" type="text" placeholder="キーワードを入力して下さい"></div>
+        <button class="search_button_2" id="searchButton">検索</button>
+        <button class="cancel_button_2" id="cancelButton">キャンセル</button>
+      </div>
+      <div class="side_nav_group_box">
+        <a href="./index.html">
+          <h2 class="side_nav_group-1"><span>プロフィールページへ</span></h2>
+        </a>
+        <a href="./group.html">
+          <h2 class="side_nav_group-2"><span>グループページへ</span></h2>
+        </a>
+      </div>
+      <iframe class="event-barner"
+        src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FTokyo&title=%E3%83%AA%E3%82%A2%E3%82%A4%E3%83%99%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC&showTabs=0&showPrint=0&src=dHN1Y2hpeWEuaXRzdWtpMDcyNEBnbWFpbC5jb20&src=aTQ5dDBrN2U3dHZrYTlhNXNtNXJsNG1nbDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=amEuamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%23F09300&color=%2333B679&color=%230B8043"></iframe>
+    </section>
 
   </main>
   <footer>
-      
+
   </footer>
-    
+
 </body>
 
 </html>
