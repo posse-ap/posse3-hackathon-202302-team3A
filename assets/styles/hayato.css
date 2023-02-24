@@ -125,7 +125,7 @@
 /* グループページ-------------------------------------------- */
 
 .group_name {
-    background-color: #0071BC;
+    background-color: #356178 !important;
     color: #fff;
     text-align: center;
     line-height: 74px;
@@ -133,4 +133,8 @@
 
 .group_total {
     line-height: 45px;
+}
+
+.group_total {
+    text-align: center;
 }
