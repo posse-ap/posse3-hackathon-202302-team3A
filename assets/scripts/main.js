@@ -57,17 +57,19 @@ function searchSections() {
   const sections = document.querySelectorAll(".modal_container");
   sections.forEach((section) => {
     const name = section.querySelector(".modal_prof_box > div:first-child").textContent.toLowerCase();
+    const posse = section.querySelector(".modal_prof_box > div:nth-child(1)").textContent.toLowerCase();
     const university = section.querySelector(".modal_prof_box > div:nth-child(3)").textContent.toLowerCase();
-    const faculity = section.querySelector(".modal_prof_box > div:nth-child(4)").textContent.toLowerCase();
-    const hobbies = section.querySelectorAll(".modal_prof_box > ul:first-child > li");
-    const addictions = section.querySelectorAll(".modal_prof_box > ul:nth-child(2) > li");
+    const faculty = section.querySelector(".modal_prof_box > div:nth-child(4)").textContent.toLowerCase();
+    const hobbies = section.querySelectorAll(".modal_prof_box > ul:nth-child(5)");
+    const addictions = section.querySelectorAll(".modal_prof_box > ul:nth-child(6)");
 
     let match = false;
 
-    if (name.includes(keyword) || university.includes(keyword) || faculity.includes(keyword)) {
+    if (name.includes(keyword) || university.includes(keyword) || faculty.includes(keyword) || posse.includes(keyword)) {
       match = true;
     }
 
+    
     hobbies.forEach((hobby) => {
       if (hobby.textContent.toLowerCase().includes(keyword)) {
         match = true;
