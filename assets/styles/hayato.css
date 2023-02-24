@@ -671,11 +671,14 @@ margin-top: 4%;
             height: 300px;
         }
         .menu{
-            display: block;
+            display: none;
             position: fixed;
             z-index: 99;
             top: 20px;
             right: 20px;
+        }
+        .menu_group{
+            display: block;
         }
         .menu_image{
             width: 64px;
@@ -697,3 +700,4 @@ margin-top: 4%;
             margin-right: 0px;
     }
 
+}
