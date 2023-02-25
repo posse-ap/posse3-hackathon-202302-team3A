@@ -1,77 +1,6 @@
 'use strict';
 
-// ここから颯人
-
-// $(function () {
-//   $('.side_nav').hide();
-// if(screen.width > 768) {
-//   $(window).scroll(function () {
-//     if ($(this).scrollTop() > 600) {
-//       $('.side_nav').fadeIn();
-//     } else {
-//       $('.side_nav').fadeOut();
-//     }
-//   }
-//   )
-// }
-// });
-
-
-// $(window).resize(function () {
-//   const width = $(window).width();
-//   console.log(width);
-//   if(width > 768){
-//     if(!sideNav.classList.contains('active'))
-//     sideNav.classList.add('active');
-//   } else {
-//     if(sideNav.classList.contains('active'))
-//     sideNav.classList.remove('active');
-//   }
-
-  
-//   // $(function () {
-//     $('.side_nav').hide();
-//     $(window).scroll(function () {
-//       if ($(this).scrollTop() > 600) {
-//         $('.side_nav').fadeIn();
-//       } else {
-//         $('.side_nav').fadeOut();
-//       }
-//     });
-  
-//   // });
-
-// });
-
-
-
-
-
-
-
-
-
-
-
-
 //ここからいつき
-
-
-// サイドバー非表示
-// $(function () {
-//   if (screen.width > 768) {
-//     $('.side_nav').hide();
-//     $(window).scroll(function () {
-//       if ($(this).scrollTop() > 800) {
-//         $('.side_nav').fadeIn();
-//       } else {
-//         $('.side_nav').fadeOut();
-//       }
-//     });
-//   } else {
-//     $('.side_nav').hide();
-//   }
-// });
 
 const sideNav = document.querySelector('.side_nav');
 
@@ -81,7 +10,7 @@ if (window.innerWidth >= 768) {
   sideNav.classList.add('side_nav--small');
 }
 
-window.addEventListener('resize', function() {
+window.addEventListener('resize', function () {
   if (window.innerWidth >= 768) {
     sideNav.classList.remove('side_nav--small');
     sideNav.classList.add('side_nav--large');
@@ -141,7 +70,6 @@ function searchSections() {
 
     const posse = section.querySelector(".modal_prof_box > div:nth-child(1)").textContent.toLowerCase();
     const university = section.querySelector(".modal_prof_box > div:nth-child(2)").textContent.toLowerCase();
-    // const faculty = section.querySelector(".modal_prof_box > div:nth-child(3)").textContent.toLowerCase();
     const hobbies = section.querySelectorAll(".modal_prof_box > ul:nth-child(4)");
     const addictions = section.querySelectorAll(".modal_prof_box > ul:nth-child(5)");
 
@@ -151,7 +79,7 @@ function searchSections() {
       match = true;
     }
 
-    
+
     hobbies.forEach((hobby) => {
       if (hobby.textContent.toLowerCase().includes(keyword)) {
         match = true;
@@ -185,78 +113,20 @@ const cancelButton = document.getElementById("cancelButton");
 cancelButton.addEventListener("click", cancelSearch);
 
 
-// const search = (searchText) => {
-//   const filteredData = profile.filter((item) => {
-//     return item.name.toLowerCase().includes(searchText.toLowerCase());
-//   });
-//   return filteredData;
-// };
-
-// const showResults = (results) => {
-//   const resultContainer = document.getElementById("result-container");
-//   resultContainer.innerHTML = "";
-  
-//   results.forEach((item) => {
-//     const itemElement = document.createElement("div");
-//     itemElement.innerHTML = item.name
-//     resultContainer.appendChild(itemElement);
-//   });
-
-// };
-
-
-// const searchButton = document.getElementById("search-button");
-// searchButton.addEventListener("click", () => {
-//   const searchText = document.getElementById("search-box").value;
-//   const results = search(searchText);
-//   showResults(results);
-// });
-
-
-// モーダルウィンドウ
-// window.addEventListener('load', function() {
-//   if(!localStorage.getItem('disp_popup')) {
-//       localStorage.setItem('disp_popup', 'on');
-//       const body = document.querySelector('body');
-//       const bgPopup = document.querySelector('.bg_onetime_popup');
-//       const popup = document.querySelector('.onetime_popup');
-//       const popupTitleClose = document.querySelector('.onetime_popup_title_close');
-//       body.classList.add('open_popup');
-
-//       bgPopup.addEventListener('click', function() {
-//           closePopup();
-//       });
-//       popup.addEventListener('click', function(e) {
-//           e.stopPropagation();
-//       });
-//       popupTitleClose.addEventListener('click', function() {
-//           closePopup();
-//       });
-
-//       function closePopup() {
-//           body.classList.remove('open_popup');
-//       }
-//   }
-// }, false);
-
-// モーダルを取得する
-
-
-
 var span = document.getElementsByClassName("close")[0];
 
-window.onload = function() {
+window.onload = function () {
   modal.style.display = "block";
   document.body.classList.add("modal-open");
 }
 
-span.onclick = function() {
+span.onclick = function () {
   modal.style.display = "none";
   document.body.classList.remove("modal-open");
   menu.classList.add("menu_active")
 }
 
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
     document.body.classList.remove("modal-open");
@@ -265,12 +135,6 @@ window.onclick = function(event) {
 }
 
 
-// リロード時にページ最上部に移動
-// window.onload = function() {
-//   setTimeout(function() {
-//     scrollTo(0,0);
-//   }, 0);
-// }
 // ここからこうよう
 const profile = [
   {
@@ -278,13 +142,13 @@ const profile = [
     name: '飯田紅葉',
     POSSE: '③',
     university: '慶應義塾大学',
-    faculty:'理工学部化学科',
+    faculty: '理工学部化学科',
     hobby: ['サッカー', 'テニス', 'バスケ'],
     addict: ['サッカー観戦', 'テニス観戦', 'バスケ観戦'],
     message: 'こう見えて心は乙女です',
     interview: '三味線のサークルとPOSSEを両立しててすごい！',
     image: 'koyo.jpg',
-    line:'https://line.me/ti/p/49ODTV_782',
+    line: 'https://line.me/ti/p/49ODTV_782',
   },
   {
     id: 2,
@@ -310,14 +174,14 @@ const profile = [
     message: '良い出会いないかなぁ',
     interview: 'ハッカソン中落とした財布見つけられたよかった！',
     image: 'itsuki.jpg',
-    line:'https://line.me/ti/p/49ODTV_782',
+    line: 'https://line.me/ti/p/49ODTV_782',
   },
   {
     id: 4,
     name: '猪瀬雄大',
-    POSSE:'①',
-    university :'慶應義塾大学',
-    faculty:'環境情報学部',
+    POSSE: '①',
+    university: '慶應義塾大学',
+    faculty: '環境情報学部',
     hobby: ['散財', '変なものを集める事', 'おしゃれ'],
     addict: ['switch', 'マリカー', 'harbors'],
     message: '最近はswitcにハマってるよ♪',
@@ -327,6 +191,7 @@ const profile = [
 ]
 
 const statusBox = document.getElementById(`statusBox`);
+
 
 for(let i = 0; i < profile.length; i++){
   
@@ -348,9 +213,9 @@ statusBox.innerHTML +=
       `<div class="modal_prof_box modal_box">`+
         `<div class="prof_name"><h2 class="prof_name_text">`+profile[i].name+`</h2></div>
         <div>`+
-        `<div class="prof_text">POSSE`+profile[i].POSSE+`</div>`+
-        `<div class="prof_text">`+profile[i].university+`</div>`+
-        `<div class="prof_text prof_text_faculty">`+profile[i].faculty+`</div>
+    `<div class="prof_text">POSSE` + profile[i].POSSE + `</div>` +
+    `<div class="prof_text">` + profile[i].university + `</div>` +
+    `<div class="prof_text prof_text_faculty">` + profile[i].faculty + `</div>
         </div>`+
         `<ul id="modal_hobby"><h2>趣味</h2>`+  //for文書けたら嬉しい
           `<li class="prof_text">`+profile[i].hobby[0]+`</li>`+
@@ -384,33 +249,17 @@ statusBox.innerHTML +=
   
   }
 
+}
 
-
-
-
-
-
-
-
-
+//ここからはやと
 
 // モダールランダムプロフィール
-// shuffle関数の定義
 
-// const  shuffle = array => {
-//   for (let i = array.length; i >= 0; i--) {
-//     const randomIndex = Math.floor(Math.random() *(i+1));
-//     [array[i], array[randomIndex],array[i]]; 
-//   }
-//   return array
-// }
-// const profArray = shuffle(profile)
-
-const randomIndex = Math.floor(Math.random() *(profile.length));
+const randomIndex = Math.floor(Math.random() * (profile.length));
 
 const randomBox = document.getElementById(`modal_random_box`);
 
-const randomProfPickUp = (index) =>  { 
+const randomProfPickUp = (index) => {
   randomBox.innerHTML +=
 `<section class="modal_container first_modal_container">`+
       `<div class="status_box modal_box">`+
@@ -429,9 +278,9 @@ const randomProfPickUp = (index) =>  {
       `<div class="modal_prof_box modal_box">`+
         `<div class="prof_name"><h2 class="prof_name_text">`+profile[index].name+`</h2></div>
         <div>`+
-        `<div class="prof_text">POSSE`+profile[index].POSSE+`</div>`+
-        `<div class="prof_text">`+profile[index].university+`</div>`+
-        `<div class="prof_text">`+profile[index].faculty+`</div>
+    `<div class="prof_text">POSSE` + profile[index].POSSE + `</div>` +
+    `<div class="prof_text">` + profile[index].university + `</div>` +
+    `<div class="prof_text">` + profile[index].faculty + `</div>
         </div>`+
         `<ul id="modal_hobby"><h2>趣味</h2>`+  //for文書けたら嬉しい
           `<li class="prof_text">`+profile[index].hobby[0]+`</li>`+
@@ -462,20 +311,19 @@ const randomProfPickUp = (index) =>  {
         `<p>`+profile[index].interview+`</p>`+
       `</div>`+
     `</section>` 
-  
 
+
+}
+
+randomProfPickUp(randomIndex);
+
+// ここからメニュー
+const menu = document.getElementById('menu');
+menu.addEventListener('click', () => {
+  sideNav.classList.toggle('active');
+  if (sideNav.classList.contain('active')) {
+    $('.side_nav').fadeOut();
+  } else {
+    $('.side_nav').fadeIn();
   }
-
-  randomProfPickUp(randomIndex);
-
-
-  // ここからメニュー
-  const menu = document.getElementById('menu');
-  menu.addEventListener('click', () => {
-    sideNav.classList.toggle('active');
-    if(sideNav.classList.contain('active')){
-      $('.side_nav').fadeOut();
-    } else {
-      $('.side_nav').fadeIn();
-    }
-  })
+})

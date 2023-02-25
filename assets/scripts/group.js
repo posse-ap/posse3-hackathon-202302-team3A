@@ -3,9 +3,6 @@
 // ここからいつき
 
 
-// モーダルアニメーション
-
-
 // サイドナビゲーション
 
 const sideNav = document.getElementById('side_nav');
@@ -45,7 +42,6 @@ function searchSections() {
   const sections = document.querySelectorAll(".group");
   sections.forEach((section) => {
     const name = section.querySelector(".group_name > div:first-child").textContent.toLowerCase();
-    // const addictions = section.querySelectorAll(".group_article> ul:nth-child > li");
 
     let match = false;
 
@@ -53,11 +49,6 @@ function searchSections() {
       match = true;
     }
 
-    // addictions.forEach((addiction) => {
-    //   if (addiction.textContent.toLowerCase().includes(keyword)) {
-    //     match = true;
-    //   }
-    // });
     if (match) {
       section.style.display = "grid";
     } else {
