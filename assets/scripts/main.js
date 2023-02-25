@@ -249,7 +249,7 @@ statusBox.innerHTML +=
   
   }
 
-}
+
 
 //ここからはやと
 
